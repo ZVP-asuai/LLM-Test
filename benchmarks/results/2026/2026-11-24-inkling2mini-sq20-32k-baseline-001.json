@@ -1,0 +1,69 @@
+{
+  "id": "2026-11-24-inkling2mini-sq20-32k-baseline-001",
+  "date": "2026-11-24",
+  "status": "exploratory",
+  "test_type": "context_prefill_decode",
+  "model": {
+    "name": "Inkling 2 Mini",
+    "variant": "SQ-20",
+    "artifact": "Inkling-2-Mini-SQ-20.strata"
+  },
+  "engine": {
+    "name": "Strata",
+    "package_version": "0.2.21",
+    "component_version": "0.1.67",
+    "backend": "CUDA 13.5"
+  },
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "uuid": "GPU-c09aac19-fd84-407a-8c4c-064b2b6eb6f2",
+    "pci_bus_id": "00000000:81:00.0",
+    "power_limit_w": 300
+  },
+  "runtime": {
+    "context_band": "~32K",
+    "requested_user_content_tokens": 32768,
+    "configured_context_tokens": 262144,
+    "actual_prompt_tokens": 32783,
+    "max_output_tokens": 256,
+    "temperature": 0,
+    "reasoning_effort": "xhigh",
+    "stream": true,
+    "include_usage": true,
+    "concurrency": 1,
+    "model_state": "warm",
+    "cache_reused_tokens": 0,
+    "prompt_type": "synthetic repeated sensor-log context; marker at prompt start"
+  },
+  "metrics": {
+    "ttft_first_engine_token_s": 17.878,
+    "ttft_first_visible_text_s": null,
+    "prompt_ms": 17866.2,
+    "prefill_tokens_per_second": 1834.9,
+    "decode_ms": 3435.5,
+    "decode_tokens_per_second": 70.1,
+    "total_response_time_s": 21.4,
+    "output_tokens": 256,
+    "engine_generated_tokens": 241,
+    "reasoning_tokens": null,
+    "finish_reason": "length",
+    "gpu_core_temperature_peak_observed_c": 58.66,
+    "gpu_power_peak_observed_w": 299.37,
+    "gpu_utilization_peak_observed_pct": 100,
+    "gpu_memory_used_observed_mib": 22608,
+    "gpu_memory_free_observed_mib": 1538,
+    "telemetry_samples_captured": 2
+  },
+  "source": {
+    "kind": "Strata /metrics runtime history plus two nvidia-smi samples",
+    "captured_at": "2026-11-24T21:20:37+03:00",
+    "request_id": "3895fd77b27f"
+  },
+  "limitations": [
+    "Одиночный exploratory-прогон; не медиана повторов.",
+    "TTFT первого видимого текста не сохранён; указано время до первого токена движка.",
+    "Температура и мощность — максимум только среди двух доступных samples, не доказанный пик всего прогона.",
+    "Выход достиг max_tokens=256; finish_reason=length.",
+    "Синтетический контекст не проверяет retrieval/recall на начале, середине и конце окна."
+  ]
+}

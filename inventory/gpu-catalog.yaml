@@ -3,11 +3,41 @@ last_updated: 2026-11-24
 policy: "Доступность GPU в CT128 подтверждать фактической проверкой."
 devices:
   - id: rtx3090
-    reported_model: "NVIDIA RTX 3090"
+    reported_model: "NVIDIA GeForce RTX 3090"
     nominal_vram_gib: 24
     lab_role: primary_test_gpu
-    status: tested_in_current_lab_session
-    pending_checks: [exact_board_model, pci_device_id, vbios, pcie_link, hotspot, memory_junction, fan_curve]
+    status: detected_and_used_by_Strata
+    uuid: "GPU-c09aac19-fd84-407a-8c4c-064b2b6eb6f2"
+    pci:
+      bus_id: "00000000:81:00.0"
+      device_id: "10DE:2204"
+      subsystem_id: "1043:87AF"
+      vbios: "94.02.42.00.A9"
+      max_link: "PCIe Gen4 x16"
+      idle_link_observed: "PCIe Gen1 x16"
+      note: "Текущая скорость Gen1 измерена в idle; под нагрузкой повторно проверить Gen4."
+    driver:
+      version: "620.70.06"
+      cuda_umd: "13.5"
+    power:
+      current_limit_w: 300
+      vbios_default_limit_w: 390
+      hardware_min_limit_w: 100
+      hardware_max_limit_w: 480
+    sensors:
+      gpu_core: available
+      gpu_hotspot: unavailable_or_not_exposed
+      memory_junction: unavailable_or_not_exposed
+      note: "nvidia-smi сообщает N/A для Memory Current Temp; hotspot не обнаружен. 70 °C можно контролировать только по доступному core sensor до появления иных датчиков."
+    observed_loaded_state:
+      gpu_process: "strata-inkling"
+      process_vram_mib: 22590
+      total_used_mib: 22608
+      free_mib: 1538
+      gpu_core_temp_c: 58.66
+      power_draw_w: 299.37
+      utilization_pct: 100
+      note: "58.66 °C и 299.37 W — максимум среди двух сохранённых samples 32K теста, не полный телеметрический максимум."
   - id: rtx5060ti
     reported_model: "NVIDIA RTX 5060 Ti"
     nominal_vram_gib: 16

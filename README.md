@@ -11,6 +11,9 @@
 - [Результаты](benchmarks/results/)
 - [Инвентаризация](inventory/)
 
+## Текущий статус RTX 3090
+В CT128 обнаружена одна NVIDIA GeForce RTX 3090. Inkling 2 Mini SQ-20 работает через Strata 0.2.21 / engine 0.1.67. Контекст 262144 настроен с Auto Host KV Offload. Предварительные запросы ~8K и ~32K дали 2028.1 / 1834.9 tok/s prefill и 78.3 / 70.1 tok/s decode соответственно. Все данные пока exploratory.
+
 ## Учёт экспериментов
 Каждый запуск получает уникальный ID и отдельный JSON. Сохраняются модель, quantization, версии движка, GPU, параметры запуска, фактический контекст, TTFT, prefill, decode, VRAM, температуры, энергопотребление, качество и ограничения измерения. Для значимых запусков создаётся HTML-отчёт.
 
@@ -26,15 +29,17 @@
 - .github/workflows/ — публикация GitHub Pages.
 
 ## Публикация HTML
-Откройте GitHub Settings → Pages и выберите GitHub Actions как источник. Workflow .github/workflows/pages.yml публикует каталог docs/ после изменений в main.
+GitHub Settings → Pages → Build and deployment → Source: GitHub Actions. Workflow .github/workflows/pages.yml публикует каталог docs/.
 
 ## Безопасность
 1. Испытания и изменения выполняются только в CT128.
 2. CT130 и CT132 — production; не подключаться и не изменять их.
-3. Команды контейнера выдавать с Proxmox HOST через pct exec 128 -- ...
+3. Команды контейнера выдавать с Proxmox HOST через pct exec 128 -- ... либо работать через подключённый агент CT128.
 4. Не менять хост, PCIe, IOMMU, драйверы, hookscript и системные библиотеки без согласования.
 5. Перед изменениями сохранять исходную конфигурацию и откат.
-6. Целевой температурный предел GPU — 70 °C.
+6. Целевой температурный предел GPU — 70 °C; контролировать только реально доступные датчики и отдельно отмечать недоступные.
 7. Не коммитить секреты, токены, приватные дампы и веса моделей.
 
-Первый результат — предварительный smoke-тест Inkling 2 Mini SQ-20 на RTX 3090. Он не является валидированным benchmark: входная длина и полный telemetry snapshot отсутствуют.
+## Последние отчёты
+- [Inkling 2 Mini SQ-20 — smoke](docs/reports/2026/2026-11-24-inkling2mini-sq20-smoke-001.html)
+- [Inkling 2 Mini SQ-20 — context baseline 8K/32K](docs/reports/2026/2026-11-24-inkling2mini-sq20-context-baseline.html)

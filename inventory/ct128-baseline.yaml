@@ -1,31 +1,50 @@
 schema_version: 1
-inventory_status: user_provided_baseline_needs_reverification
-last_known_date: 2026-11-24
+inventory_status: reverified_from_inside_ct128
+last_verified: 2026-11-24
 container:
   id: 128
+  name: llm-test-128
   role: LAB
   type: LXC
   unprivileged: true
+  os: Ubuntu 24.04 LTS
   cores: 24
-  memory_mb: 204800
-  swap_mb: 8192
-  rootfs_gb: 200
+  memory_gib: 200
+  swap_gib: 8
+  rootfs_total_gib: 196
+  rootfs_free_gib: 154
   autostart: false
   hookscript: ct128-gpu-guard.sh
+mounts:
+  - path: /mnt/models-store
+    access: read-only
+    filesystem: ext4
+    total_gib: 984
+    free_gib: 459
+  - path: /mnt/local-llm
+    access: read-only
+    filesystem: ext4
+    total_gib: 3.6
+    free_gib: 3.2
 gpu_devices:
   - /dev/nvidia1
   - /dev/nvidiactl
   - /dev/nvidia-uvm
   - /dev/nvidia-uvm-tools
-mounts:
-  - path: /mnt/models-store
-    access: read-only
-  - path: /opt/nvidia-host
-    access: read-only
-  - path: /mnt/local-llm
-    access: read-only
+gpu_visibility:
+  count: 1
+  detected: ["NVIDIA GeForce RTX 3090"]
+  note: "Проверено nvidia-smi -L из CT128; другие GPU пока не видны."
+software:
+  nvidia_driver: "620.70.06"
+  cuda_umd: "13.5"
+  strata_package: "0.2.21"
+  strata_engine_component: "0.1.67"
+  python: "3.12.15 (Strata runtime)"
+  node: "24.22.3 (Desktop Commander)"
 rules:
-  - "Команды CT128 запускать с HOST через pct exec 128 -- ..."
+  - "Команды CT128 выполнять только через удалённый агент, запущенный внутри CT128, либо с HOST через pct exec 128 -- ..."
   - "Не подключаться к CT130 и CT132"
-  - "Не менять Proxmox HOST без согласования"
-  - "Перед изменениями повторно проверить конфигурацию"
+  - "Не подключаться к Proxmox HOST удалённо"
+  - "Не менять Proxmox HOST, PCIe, IOMMU, драйверы или hookscript без согласования"
+  - "Перед изменениями повторно проверить конфигурацию и сохранить исходное состояние"

@@ -1,0 +1,67 @@
+{
+  "id": "2026-11-24-inkling2mini-sq20-8k-baseline-001",
+  "date": "2026-11-24",
+  "status": "exploratory",
+  "test_type": "context_prefill_decode",
+  "model": {
+    "name": "Inkling 2 Mini",
+    "variant": "SQ-20",
+    "artifact": "Inkling-2-Mini-SQ-20.strata"
+  },
+  "engine": {
+    "name": "Strata",
+    "package_version": "0.2.21",
+    "component_version": "0.1.67",
+    "backend": "CUDA 13.5"
+  },
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "uuid": "GPU-c09aac19-fd84-407a-8c4c-064b2b6eb6f2",
+    "pci_bus_id": "00000000:81:00.0",
+    "power_limit_w": 300
+  },
+  "runtime": {
+    "context_band": "~8K",
+    "configured_context_tokens": 262144,
+    "actual_prompt_tokens": 8015,
+    "max_output_tokens": 256,
+    "temperature": 0,
+    "reasoning_effort": "xhigh",
+    "stream": true,
+    "include_usage": true,
+    "concurrency": 1,
+    "model_state": "warm",
+    "cache_reused_tokens": 0,
+    "prompt_type": "synthetic context-fill; exact prompt text not recovered"
+  },
+  "metrics": {
+    "ttft_first_engine_token_s": 4.14,
+    "ttft_first_visible_text_s": null,
+    "prompt_ms": 3951.9,
+    "prefill_tokens_per_second": 2028.1,
+    "decode_ms": 3077.5,
+    "decode_tokens_per_second": 78.3,
+    "total_response_time_s": 7.3,
+    "output_tokens": 256,
+    "engine_generated_tokens": 241,
+    "reasoning_tokens": null,
+    "finish_reason": "length",
+    "gpu_core_temperature_peak_observed_c": null,
+    "gpu_power_peak_observed_w": null,
+    "gpu_utilization_peak_observed_pct": null,
+    "gpu_memory_used_observed_mib": null
+  },
+  "source": {
+    "kind": "Strata /metrics runtime history",
+    "captured_at": "2026-11-24T21:20:37+03:00",
+    "request_id": "4ca78bfd8bd2"
+  },
+  "limitations": [
+    "Одиночный exploratory-прогон; не медиана повторов.",
+    "Фактическая длина prompt включает 15 токенов шаблона; исходный текст запроса в текущем журнале не восстановлен.",
+    "TTFT первого видимого текста не сохранён; указано время до первого токена движка.",
+    "Температура, мощность и peak VRAM для этого запроса не сохранены.",
+    "Выход достиг max_tokens=256; finish_reason=length.",
+    "Не является тестом извлечения фактов из длинного контекста."
+  ]
+}
