@@ -1,0 +1,17 @@
+*.tmp
+*.log
+*.prof
+__pycache__/
+.pytest_cache/
+.DS_Store
+*.gguf
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.engine
+*.cache
+.env
+.env.*
+!.env.example
+secrets/
