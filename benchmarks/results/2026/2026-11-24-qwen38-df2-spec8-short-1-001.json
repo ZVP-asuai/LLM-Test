@@ -1,0 +1,74 @@
+{
+  "model": {
+    "name": "Qwen3.8 Flash Next",
+    "variant": "UD-Q4_K_XL"
+  },
+  "engine": {
+    "name": "Strata",
+    "package_version": "0.2.21",
+    "component_version": "0.1.67"
+  },
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "nominal_vram_gib": 24,
+    "power_limit_w": 300
+  },
+  "runtime": {
+    "configured_context_tokens": 262144,
+    "concurrency": 1,
+    "reasoning_effort": "xhigh (template default; thinking enabled)",
+    "kv_dtype": "int8",
+    "kv_resident": 32768,
+    "expert_cache_configured_slots": 4900,
+    "expert_cache_startup_slots": 5546,
+    "draft": "dflash2",
+    "spec": 8,
+    "draft_cap": 8,
+    "draft_conf": 0.7,
+    "temperature": 0,
+    "max_output_tokens": 768,
+    "route_resident_inherited": 1,
+    "route_tail_skip": 0,
+    "thermal_guard_c": 68,
+    "no_arena_thp": true,
+    "vram_reserve_mib": 2048,
+    "actual_prompt_tokens": 536,
+    "cache_reused_tokens": 0
+  },
+  "id": "2026-11-24-qwen38-df2-spec8-short-1-001",
+  "date": "2026-11-24",
+  "status": "exploratory",
+  "test_type": "single_request",
+  "metrics": {
+    "ttft_first_engine_event_s": 1.0248,
+    "ttft_first_visible_text_s": 7.9144,
+    "total_response_time_s": 9.2122,
+    "prefill_tokens_per_second": 533.1,
+    "decode_tokens_per_second": 93.7,
+    "output_tokens": 768,
+    "prompt_ms": 1005.3,
+    "decode_ms": 8200.7,
+    "gpu_core_temperature_c": 59.97,
+    "gpu_power_w": 299.95,
+    "gpu_memory_peak_observed_mib": 24044,
+    "thermal_scope": "whole series, 214 samples",
+    "drafts_accepted": 426,
+    "drafts_offered": 484,
+    "expert_hit_rate_pct": 84.9
+  },
+  "quality": {
+    "test": "sensor checks, response nonempty",
+    "passed": true,
+    "finish_reason": "length"
+  },
+  "report": "reports/2026/2026-11-24-qwen38-df2-spec8.html",
+  "raw_result": "benchmarks/raw/2026/2026-11-24-qwen38-df2-spec8/measure.jsonl",
+  "limitations": [
+    "One new run per case; historical comparison is not a controlled A/B",
+    "32K decode only 74 generated tokens",
+    "Short case capped at 768 tokens",
+    "Inherited STRATA_ROUTE_RESIDENT=1 changes routing and requires quality validation",
+    "Hotspot and memory junction unavailable",
+    "THP setting changed as well as draft width; speed gain cannot be attributed to spec alone"
+  ]
+}

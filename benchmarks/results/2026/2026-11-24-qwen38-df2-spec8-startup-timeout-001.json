@@ -1,0 +1,50 @@
+{
+  "model": {
+    "name": "Qwen3.8 Flash Next",
+    "variant": "UD-Q4_K_XL"
+  },
+  "engine": {
+    "name": "Strata",
+    "package_version": "0.2.21",
+    "component_version": "0.1.67"
+  },
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "nominal_vram_gib": 24,
+    "power_limit_w": 300
+  },
+  "runtime": {
+    "configured_context_tokens": 262144,
+    "concurrency": 1,
+    "reasoning_effort": "xhigh (template default; thinking enabled)",
+    "kv_dtype": "int8",
+    "kv_resident": 32768,
+    "expert_cache_configured_slots": 4900,
+    "expert_cache_startup_slots": 5546,
+    "draft": "dflash2",
+    "spec": 8,
+    "draft_cap": 8,
+    "draft_conf": 0.7,
+    "temperature": 0,
+    "max_output_tokens": 768,
+    "route_resident_inherited": 1,
+    "route_tail_skip": 0,
+    "thermal_guard_c": 68,
+    "no_arena_thp": false,
+    "vram_reserve_mib": 2048
+  },
+  "id": "2026-11-24-qwen38-df2-spec8-startup-timeout-001",
+  "date": "2026-11-24",
+  "status": "failed",
+  "test_type": "startup",
+  "metrics": {
+    "prefill_tokens_per_second": null,
+    "decode_tokens_per_second": null,
+    "gpu_core_temperature_c": 43.03,
+    "gpu_memory_peak_observed_mib": 6546,
+    "gpu_power_w": 133.42,
+    "telemetry_samples": 213
+  },
+  "failure": "120s benchmark client time budget expired before expert arena finished startup; service stopped and GPU released",
+  "report": "reports/2026/2026-11-24-qwen38-df2-spec8.html"
+}
