@@ -1,0 +1,58 @@
+{
+  "target": 8192,
+  "actual_user_tokens": 8177,
+  "request_sha256": "615cdb76a1826f57849b8aca4fde3f4011bc5f946fa02865f1fc73b62d6fc357",
+  "ttft_sse_event_s": 4.303336884997407,
+  "ttft_visible_s": 5.357843046000198,
+  "client_elapsed_s": 5.422480065997661,
+  "done": true,
+  "usage": {
+    "prompt_tokens": 8192,
+    "completion_tokens": 90,
+    "total_tokens": 8282,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 81
+    }
+  },
+  "server": {
+    "id": "3438f860a81b",
+    "projection": null,
+    "time": 1795545716.384701,
+    "duration_s": 5.4,
+    "finish": "stop",
+    "gen": 1,
+    "prompt_tokens": 8192,
+    "reused": 0,
+    "output_tokens": 90,
+    "first_engine_token_s": 4.263,
+    "prompt_total": 8192,
+    "prompt_read": null,
+    "reasoning_recoveries": 0,
+    "reasoning_repeat_coverage": 0.0,
+    "engine_generated": 90,
+    "prompt_ms": 3971.9,
+    "decode_ms": 1143.3,
+    "decode_tok_s": 78.7,
+    "hit_rate": null,
+    "pcie_share": null,
+    "ram_blobs": null,
+    "file_blobs": null,
+    "file_mb": null,
+    "drafts_offered": 0,
+    "drafts_accepted": 0
+  },
+  "gpu": {
+    "samples": 10,
+    "core_max_c": 55.59,
+    "memory_max_c": null,
+    "power_max_w": 300.18,
+    "vram_max_mib": 22608.0,
+    "pcie_gen_max_observed": 4.0
+  },
+  "answer": "ALPHA-7391",
+  "reference_found": true,
+  "guard_threshold_c": 68
+}

@@ -1,0 +1,38 @@
+{
+ "exe": "component:strata-inkling",
+ "args": [
+  "--native",
+  "/mnt/models-store/Inkling 2 Mini/SQ 20/Inkling-2-Mini-SQ-20.strata",
+  "--max-context",
+  "262144",
+  "--draft",
+  "off",
+  "--vision",
+  "/mnt/models-store/Inkling 2 Mini/SQ 20/Inkling-2-Mini-Vision.strata",
+  "--vram-experts-gb",
+  "14.66"
+ ],
+ "cwd": "/opt/strata-0221/.local/share/strata/terminal/0.1.67",
+ "tokenizer": "/opt/strata-0221/.local/share/strata/Strata-data/packs/inkling-2-mini-sq-20/tokenizer",
+ "model_name": "inkling-2-mini-sq-20",
+ "arch": "inkling2_loop",
+ "log": "/opt/strata-0221/.local/share/strata/install/strata-inkling-2-mini-sq-20.log",
+ "lib_dirs": [],
+ "port": 8080,
+ "drafting": "off",
+ "parallel": 1,
+ "gpu": 0,
+ "gpus_asked": true,
+ "args_written": [
+  "--native",
+  "/mnt/models-store/Inkling 2 Mini/SQ 20/Inkling-2-Mini-SQ-20.strata",
+  "--max-context",
+  "262144",
+  "--draft",
+  "off",
+  "--vision",
+  "/mnt/models-store/Inkling 2 Mini/SQ 20/Inkling-2-Mini-Vision.strata",
+  "--vram-experts-gb",
+  "14.66"
+ ]
+}
