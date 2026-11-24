@@ -1,0 +1,72 @@
+{
+  "id": "2026-11-24-inkling2mini-sq20-32k-guarded-001",
+  "date": "2026-11-24",
+  "status": "exploratory",
+  "test_type": "long_context",
+  "model": {
+    "name": "Inkling 2 Mini",
+    "variant": "SQ-20",
+    "artifact": "Inkling-2-Mini-SQ-20.strata"
+  },
+  "engine": {
+    "name": "Strata",
+    "package_version": "0.2.21",
+    "component_version": "0.1.67"
+  },
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "nominal_vram_gib": 24,
+    "power_limit_w": 300
+  },
+  "runtime": {
+    "configured_context_tokens": 262144,
+    "actual_prompt_tokens": 32768,
+    "context_band": "32K",
+    "reasoning_effort_requested": "xhigh",
+    "temperature": 0,
+    "max_output_tokens": 256,
+    "kv_dtype": "fp16",
+    "draft": "off",
+    "expert_cache_gb": 14.66,
+    "concurrency": 1,
+    "cache_reused_tokens": 0,
+    "thermal_guard_c": 68,
+    "model_state": "warm",
+    "request_sha256": "abfd428aa7ad3843ed7764572590cb6d61362eb100a4c5326de23da756e89525"
+  },
+  "metrics": {
+    "ttft_first_engine_token_s": 17.806,
+    "ttft_first_visible_text_s": 18.847,
+    "ttft_first_sse_event_s": 17.873,
+    "prefill_tokens_per_second": 1845.4,
+    "decode_tokens_per_second": 70.8,
+    "total_response_time_s": 18.919,
+    "prompt_ms": 17756.7,
+    "decode_ms": 1074.2,
+    "output_tokens": 76,
+    "reasoning_tokens": 67,
+    "gpu_core_temperature_c": 58.53,
+    "gpu_power_w": 300.07,
+    "gpu_memory_peak_observed_mib": 22608,
+    "gpu_memory_junction_c": null,
+    "gpu_hotspot_c": null,
+    "pcie_gen_max_observed": 4,
+    "telemetry_samples": 34
+  },
+  "quality": {
+    "task": "Retrieve ALPHA-7391 from beginning of a synthetic repetitive record",
+    "expected": "ALPHA-7391",
+    "answer": "ALPHA-7391",
+    "passed": true
+  },
+  "raw_result": "benchmarks/raw/2026/2026-11-24-inkling2mini-sq20-guarded-baseline/32768-result.json",
+  "telemetry": "benchmarks/raw/2026/2026-11-24-inkling2mini-sq20-guarded-baseline/telemetry.jsonl",
+  "report": "reports/2026/2026-11-24-inkling2mini-sq20-guarded-baseline.html",
+  "limitations": [
+    "One run per length, not a validated median",
+    "Simple retrieval from beginning only; not comprehensive quality testing",
+    "GPU temperatures and power are sampled maxima, not guaranteed physical peaks",
+    "Hotspot and memory junction not exposed",
+    "No separate long fixed-length decode benchmark"
+  ]
+}
