@@ -1,0 +1,74 @@
+{
+  "model": {
+    "name": "Qwen3.8 Flash Next",
+    "variant": "UD-Q4_K_XL"
+  },
+  "engine": {
+    "name": "Strata",
+    "package_version": "0.2.21",
+    "component_version": "0.1.67"
+  },
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "nominal_vram_gib": 24,
+    "power_limit_w": 300
+  },
+  "id": "2026-11-24-qwen38-df2-stream32-short-1-001",
+  "date": "2026-11-24",
+  "status": "exploratory",
+  "test_type": "single_request",
+  "runtime": {
+    "configured_context_tokens": 262144,
+    "actual_prompt_tokens": 536,
+    "cache_reused_tokens": 0,
+    "concurrency": 1,
+    "thinking_enabled": true,
+    "reasoning_effort_verified": false,
+    "temperature": 0,
+    "max_output_tokens": 768,
+    "kv_dtype": "int8",
+    "kv_resident": 32768,
+    "draft": "dflash2",
+    "spec": 8,
+    "draft_cap": 8,
+    "draft_conf": 0.7,
+    "route_resident_inherited": 1,
+    "route_tail_skip": 0,
+    "prefill_routed_stream_depth": 32,
+    "no_arena_thp": true,
+    "vram_reserve_mib": 2048,
+    "thermal_guard_c": 68
+  },
+  "metrics": {
+    "ttft_first_engine_event_s": 1.0527,
+    "ttft_first_visible_text_s": 7.6644,
+    "total_response_time_s": 8.0043,
+    "prefill_tokens_per_second": 518.6,
+    "decode_tokens_per_second": 110.3,
+    "output_tokens": 768,
+    "prompt_ms": 1033.6,
+    "decode_ms": 6964.7,
+    "gpu_core_temperature_c": 61.22,
+    "gpu_memory_peak_observed_mib": 24082,
+    "gpu_power_w": 301,
+    "thermal_scope": "whole series",
+    "telemetry_samples": 184,
+    "drafts_accepted": 426,
+    "drafts_offered": 482,
+    "expert_hit_rate_pct": 85
+  },
+  "quality": {
+    "test": "nonempty sensor-check response",
+    "passed": true,
+    "finish_reason": "length"
+  },
+  "report": "reports/2026/2026-11-24-qwen38-df2-stream32.html",
+  "raw_result": "benchmarks/raw/2026/2026-11-24-qwen38-df2-stream32/measure.jsonl",
+  "limitations": [
+    "One sample per arm; decode variability not ruled out",
+    "32K output only 74 tokens; short output capped at 768",
+    "Inherited residency-biased routing; no exact-routing quality gate",
+    "Thinking enabled but actual maximum reasoning effort not independently verified",
+    "Memory Junction and Hotspot unavailable"
+  ]
+}

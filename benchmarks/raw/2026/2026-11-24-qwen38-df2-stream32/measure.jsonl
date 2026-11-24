@@ -1,0 +1,5 @@
+{"version": "stream32", "expected_exe": "/opt/strata-0221/.local/share/strata/components/engine/0.1.67-linux-x86_64-cuda-cuda13/strata", "thinking": "on", "only": ["short-1", "32k"]}
+{"case": "initial-load", "http": 200, "input_tokens": 60, "output_tokens": 32, "ttft_s": 84.3164, "content_s": 84.5622, "total_s": 84.5628, "timings": {"cache_n": 0, "prompt_n": 60, "prompt_ms": 434.7, "predicted_n": 32, "predicted_ms": 264.8}, "finish": "stop", "ok": true}
+{"engine_paths": ["/opt/strata-0221/.local/share/strata/components/engine/0.1.67-linux-x86_64-cuda-cuda13/strata"], "exact_binary": true}
+{"case": "short-1", "http": 200, "input_tokens": 536, "output_tokens": 768, "ttft_s": 1.0527, "content_s": 7.6644, "total_s": 8.0043, "timings": {"cache_n": 0, "prompt_n": 536, "prompt_ms": 1033.6, "predicted_n": 768, "predicted_ms": 6964.7}, "finish": "length", "ok": true}
+{"case": "32k", "http": 200, "input_tokens": 32213, "output_tokens": 74, "ttft_s": 11.1614, "content_s": 11.724, "total_s": 11.7594, "timings": {"cache_n": 0, "prompt_n": 32213, "prompt_ms": 11101.7, "predicted_n": 74, "predicted_ms": 612.2}, "finish": "stop", "ok": true}
