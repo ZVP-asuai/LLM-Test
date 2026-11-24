@@ -1,0 +1,75 @@
+{
+  "lab": "CT128 GPU LAB",
+  "generated_on": "2026-11-24",
+  "summary": {
+    "total_runs": 1,
+    "exploratory_runs": 1,
+    "validated_runs": 0,
+    "note": "Зафиксирован один предварительный smoke-тест. Сравнительные выводы делать рано."
+  },
+  "hardware": [
+    {
+      "name": "NVIDIA RTX 3090",
+      "vram_gib": 24,
+      "role": "Основная тестовая карта",
+      "status": "В тестовом контуре"
+    }
+  ],
+  "benchmarks": [
+    {
+      "id": "2026-11-24-inkling2mini-sq20-smoke-001",
+      "date": "2026-11-24",
+      "status": "exploratory",
+      "test_type": "smoke",
+      "model": {
+        "name": "Inkling 2 Mini",
+        "variant": "SQ-20",
+        "artifact": "Inkling-2-Mini-SQ-20.strata",
+        "source_path": "/mnt/models-store/Inkling 2 Mini/SQ 20/Inkling-2-Mini-SQ-20.strata"
+      },
+      "engine": {
+        "name": "Strata",
+        "package_version": "0.2.21",
+        "engine_component_version": "0.1.67"
+      },
+      "hardware": {
+        "gpu": "NVIDIA RTX 3090",
+        "nominal_vram_gib": 24,
+        "power_limit_w": 300
+      },
+      "runtime": {
+        "configured_context_tokens": 262144,
+        "tested_prompt_tokens": null,
+        "endpoint": "http://127.0.0.1:18080/v1/chat/completions",
+        "offline": true,
+        "stream": true,
+        "temperature": 0,
+        "max_output_tokens": 256,
+        "reasoning_effort": "xhigh",
+        "include_usage": true
+      },
+      "metrics": {
+        "ttft_first_engine_event_s": 0.145,
+        "ttft_first_visible_text_s": 1.765,
+        "prefill_tokens_per_second": 625,
+        "decode_tokens_per_second": 89.3,
+        "output_tokens": 256,
+        "reasoning_tokens": 144,
+        "gpu_core_temperature_c": 55.8,
+        "gpu_power_w": 299,
+        "gpu_memory_peak_mib": null,
+        "total_response_time_s": null
+      },
+      "prompt": "Реши задачу пошагово. У инженера есть три датчика с показаниями 12, 15 и 21. Среднее арифметическое равно 16. Если к каждому показанию прибавить одно и то же число, среднее станет 20. Какое это число? Проверь ответ и кратко объясни.",
+      "result_note": "Тест ограничен max_output_tokens=256; ответ усечён лимитом. 144 reasoning-токена учтены в usage.",
+      "limitations": [
+        "Короткий smoke-тест, не полный benchmark.",
+        "Фактическое число входных токенов в доступной записи отсутствует.",
+        "Контекст 262144 задан в конфигурации, но работа на полном контексте не подтверждена.",
+        "Сырые логи и полный telemetry snapshot не сохранены."
+      ],
+      "raw_log_available": false,
+      "report": "reports/2026/2026-11-24-inkling2mini-sq20-smoke-001.html"
+    }
+  ]
+}

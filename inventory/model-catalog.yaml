@@ -1,0 +1,14 @@
+schema_version: 1
+last_updated: 2026-11-24
+priority_models:
+  - name: "Inkling 2 Mini"
+    status: installed_and_smoke_tested
+    variants_seen: ["SQ-20"]
+  - name: "Hy4 Flash"
+    status: planned_for_testing
+  - name: "Qwen3.8 Flash Next"
+    status: planned_for_testing
+model_policy:
+  - "Фиксировать точное имя файла и quantization."
+  - "Не коммитить веса моделей."
+  - "Фактический контекст проверять tokenizer'ом и отдельными long-context тестами."

@@ -1,0 +1,31 @@
+schema_version: 1
+inventory_status: user_provided_baseline_needs_reverification
+last_known_date: 2026-11-24
+container:
+  id: 128
+  role: LAB
+  type: LXC
+  unprivileged: true
+  cores: 24
+  memory_mb: 204800
+  swap_mb: 8192
+  rootfs_gb: 200
+  autostart: false
+  hookscript: ct128-gpu-guard.sh
+gpu_devices:
+  - /dev/nvidia1
+  - /dev/nvidiactl
+  - /dev/nvidia-uvm
+  - /dev/nvidia-uvm-tools
+mounts:
+  - path: /mnt/models-store
+    access: read-only
+  - path: /opt/nvidia-host
+    access: read-only
+  - path: /mnt/local-llm
+    access: read-only
+rules:
+  - "Команды CT128 запускать с HOST через pct exec 128 -- ..."
+  - "Не подключаться к CT130 и CT132"
+  - "Не менять Proxmox HOST без согласования"
+  - "Перед изменениями повторно проверить конфигурацию"

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CT128 benchmark record",
+  "type": "object",
+  "required": [
+    "id",
+    "date",
+    "status",
+    "test_type",
+    "model",
+    "engine",
+    "hardware",
+    "runtime",
+    "metrics"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "status": {
+      "enum": [
+        "planned",
+        "running",
+        "exploratory",
+        "validated",
+        "failed",
+        "incomplete"
+      ]
+    },
+    "test_type": {
+      "type": "string"
+    },
+    "model": {
+      "type": "object"
+    },
+    "engine": {
+      "type": "object"
+    },
+    "hardware": {
+      "type": "object"
+    },
+    "runtime": {
+      "type": "object"
+    },
+    "metrics": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

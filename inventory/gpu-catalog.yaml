@@ -1,0 +1,34 @@
+schema_version: 1
+last_updated: 2026-11-24
+policy: "Доступность GPU в CT128 подтверждать фактической проверкой."
+devices:
+  - id: rtx3090
+    reported_model: "NVIDIA RTX 3090"
+    nominal_vram_gib: 24
+    lab_role: primary_test_gpu
+    status: tested_in_current_lab_session
+    pending_checks: [exact_board_model, pci_device_id, vbios, pcie_link, hotspot, memory_junction, fan_curve]
+  - id: rtx5060ti
+    reported_model: "NVIDIA RTX 5060 Ti"
+    nominal_vram_gib: 16
+    lab_role: planned
+    status: planned_user_report
+    pending_checks: [ct128_visibility, exact_board_model, pci_device_id, vbios, pcie_link, cooling]
+  - id: rtx3080-20gb-a
+    reported_model: "NVIDIA RTX 3080 modified"
+    nominal_vram_gib: 20
+    lab_role: planned
+    status: planned_user_report
+    pending_checks: [ct128_visibility, exact_board_model, pci_device_id, vbios, pcie_link, memory_stability, cooling]
+  - id: rtx3080-20gb-b
+    reported_model: "NVIDIA RTX 3080 modified"
+    nominal_vram_gib: 20
+    lab_role: planned
+    status: planned_user_report
+    pending_checks: [ct128_visibility, exact_board_model, pci_device_id, vbios, pcie_link, memory_stability, cooling]
+  - id: rtx2080-22gb
+    reported_model: "NVIDIA RTX 2080 modified"
+    nominal_vram_gib: 22
+    lab_role: planned
+    status: planned_user_report
+    pending_checks: [ct128_visibility, exact_board_model, pci_device_id, vbios, pcie_link, memory_stability, cooling]
