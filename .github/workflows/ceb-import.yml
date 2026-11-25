@@ -1,0 +1,38 @@
+name: "CEB: импорт результата"
+on:
+  workflow_dispatch:
+    inputs:
+      run_json:
+        description: "Компактный ceb-run.json (без ответов и секретов, до 60000 символов)"
+        required: true
+        type: string
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: ceb-import-main
+  cancel-in-progress: false
+jobs:
+  import:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate and append summary
+        run: node scripts/ceb-import.cjs
+      - name: Save report to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/ceb/v2/runs.json
+          git commit -m "CEB: append submitted model report"
+          git push origin HEAD:main
+      - name: Publish GitHub Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --repo "$GITHUB_REPOSITORY" --ref main
