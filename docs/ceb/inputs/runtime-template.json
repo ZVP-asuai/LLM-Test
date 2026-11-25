@@ -16,7 +16,8 @@
     "reserve_tokens": null,
     "direct_injection": false,
     "truncation": null,
-    "input_sha256": null
+    "input_sha256": null,
+    "supported": null
   },
   "browser_offline": {
     "verified": false,
@@ -35,7 +36,8 @@
     "reserve_tokens": null,
     "direct_injection": false,
     "truncation": null,
-    "input_sha256": null
+    "input_sha256": null,
+    "supported": null
   },
   "native_context256": {
     "verified": false,
@@ -46,7 +48,8 @@
     "reserve_tokens": null,
     "direct_injection": false,
     "truncation": null,
-    "input_sha256": null
+    "input_sha256": null,
+    "supported": null
   },
   "office_files": {
     "verified": false,

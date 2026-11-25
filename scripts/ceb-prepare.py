@@ -67,7 +67,7 @@ def main():
         except Exception as e:errs.append(str(e))
     readiness=[]
     for t in m['tasks']:
-        q=c['tasks'][t['id']];issues=[];inputs=[];maps={}
+        q=c['tasks'][t['id']];issues=[];inputs=[];maps={};model_unsupported=False
         for n in q['files']:
             names=['tool-service.py','fixtures/tool-catalog.json'] if n=='tool service' else [cat['files'][n]['path']]
             for name in names:
@@ -85,8 +85,9 @@ def main():
             if not(isinstance(v,dict) and v.get('verified') is True and v.get('evidence')):issues.append('runtime not verified: '+cap)
         if t['id'] in c['context_policy']:
             v=rt.get('native_'+t['id'],{});target=c['context_policy'][t['id']];n=v.get('input_tokens');r=v.get('reserve_tokens');w=v.get('configured_context')
-            if not(isinstance(n,int) and isinstance(r,int) and isinstance(w,int) and target*.9<=n<target and r>0 and n+r<=target<=w and v.get('tokenizer_id') and v.get('direct_injection') is True and v.get('truncation') is False and re.fullmatch('[0-9a-f]{64}',str(v.get('input_sha256')))):issues.append('native context evidence missing')
-        readiness.append({'id':t['id'],'profile':t['profile'],'ready':not issues,'issues':issues,'inputs':inputs,'depends_on':q['depends_on']})
+            model_unsupported=(v.get('verified') is True and bool(v.get('evidence')) and v.get('supported') is False and isinstance(w,int) and 0<w<target and bool(v.get('tokenizer_id')))
+            if not model_unsupported and not(isinstance(n,int) and isinstance(r,int) and isinstance(w,int) and target*.9<=n<target and r>0 and n+r<=target<=w and v.get('tokenizer_id') and v.get('direct_injection') is True and v.get('truncation') is False and re.fullmatch('[0-9a-f]{64}',str(v.get('input_sha256')))):issues.append('native context evidence missing')
+        readiness.append({'id':t['id'],'profile':t['profile'],'ready':not issues,'model_unsupported':model_unsupported,'issues':issues,'inputs':inputs,'depends_on':q['depends_on']})
         write(a.output/'tasks'/(t['id']+'.json'),{'id':t['id'],'number':t['number'],'prompt':t['prompt'],'clarification':cat.get('clarifications',{}).get(t['id']),'inputs':inputs,'source_maps':maps,'artifacts':q['artifacts'],'runtime':q['runtime'],'depends_on':q['depends_on'],'delivery_revision':c['revision']})
     inv=[{'path':x.relative_to(a.output).as_posix(),'sha256':sha(x)} for x in sorted([*(a.output/'bundle').rglob('*'),*(a.output/'documents').rglob('*'),*(a.output/'tasks').glob('*.json')]) if x.is_file()]
     write(a.output/'prepared-inventory.json',inv)
