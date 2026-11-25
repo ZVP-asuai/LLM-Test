@@ -4,11 +4,13 @@
 
 ## Главная панель
 - [HTML Dashboard](docs/index.html)
-- [CEB 2.0 — 50 заданий и полные промпты](docs/ceb/index.html)
-- [CEB 2.0 — сравнение моделей, эталон GPT-6.2 и графики](docs/ceb/v2/index.html)
+- [CEB 3.0 — актуальный комплекс, 100 заданий](docs/ceb/v3/index.html)
+- [CEB 3.0 — сравнение и импорт результатов](docs/ceb/v3/index.html#comparison)
+- [CEB 3.0 — актуальный промпт агента](docs/ceb/v3/launch.txt)
+- [CEB 2.0 — архив сравнения и прежние результаты](docs/ceb/v2/index.html)
 - [CEB 2.0 — журнал самопроверки эталона](docs/ceb/v2/reference-audit.json)
 - [CEB 2.0 — машиночитаемый манифест](docs/ceb/tasks.json)
-- [CEB — запуск обычного чата](docs/ceb/v2/chat-start.txt)
+- [CEB 3.0 — манифест](docs/ceb/v3/manifest.json)
 - [CEB — найденные проблемы и приёмка](docs/ceb/diagnostics.html)
 - [Архитектура](docs/architecture.md)
 - [Методика испытаний](docs/experiment-protocol.md)
