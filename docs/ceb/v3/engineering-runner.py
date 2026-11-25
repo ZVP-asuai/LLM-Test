@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """CEB run ledger: standard Python, no network, no scoring. Run in a private workspace."""
-import argparse, hashlib, json, math, os, time, zipfile
+import argparse, csv, hashlib, io, json, math, os, tempfile, time, zipfile, xml.etree.ElementTree as ET
 from pathlib import Path, PurePosixPath
 from datetime import datetime, timezone
 
@@ -23,7 +23,27 @@ def artifact(root,s):
     require(safe(s),"Invalid artifact path: "+str(s))
     p=(root/s).resolve()
     require(p.is_relative_to(root.resolve()) and p.is_file(),"Missing output artifact: "+s)
+    require(p.stat().st_size>0,"Empty output artifact: "+s)
     return p
+def inspect_artifact(p):
+    ext=p.suffix.lower()
+    if ext==".json": read(p)
+    elif ext==".csv":
+        with p.open(encoding="utf-8-sig",newline="") as f:
+            require(any(row for row in csv.reader(f,strict=True)),"CSV has no rows: "+p.name)
+    elif ext in (".xml",".svg"):
+        node=ET.parse(p).getroot()
+        if ext==".svg": require(node.tag.rsplit("}",1)[-1]=="svg","Not an SVG document")
+    elif ext==".py": compile(p.read_text(encoding="utf-8"),p.name,"exec")
+    elif ext==".html":
+        data=p.read_text(encoding="utf-8").lower()
+        require("<html" in data or "<!doctype html" in data,"HTML document missing")
+    elif ext in (".st",".conf",".txt"): p.read_text(encoding="utf-8")
+def stamp(): return {"ns":time.monotonic_ns(),"utc":now()}
+def elapsed(start,end):
+    delta=(end["ns"]-start["ns"])/1e9
+    utc_delta=(datetime.fromisoformat(end["utc"])-datetime.fromisoformat(start["utc"])).total_seconds()
+    return round(delta,6) if delta>0 and utc_delta>=0 and abs(delta-utc_delta)<5 and round(delta,6)>0 else None
 def check_catalog(c):
     require(c["dataset_id"]==DATASET,"Wrong dataset")
     require([x["number"] for x in c["tasks"]]==list(range(1,101)),"Expected 100 ordered tasks")
@@ -47,7 +67,7 @@ def check_task(t,c,root):
         if x["status"]=="not_run": require(x["observed"] is None,"Unrun check has observed value")
         else: require(x["observed"] is not None and isinstance(x["evidence"],str) and x["evidence"].strip(),"Missing actual evidence")
     require(len(set(t["artifacts"]))==len(t["artifacts"]),"Duplicate artifact")
-    for x in t["artifacts"]: artifact(root,x)
+    for x in t["artifacts"]: inspect_artifact(artifact(root,x))
     if t["status"]=="completed":
         require(nonempty(t.get("answer")) and t.get("issue") is None and t["calculation_steps"] and t["sources"] and t["checks"],"Missing answer/method/source/checks")
         require(set(c.get("artifacts",[]))<=set(t["artifacts"]),"Required output missing")
@@ -71,18 +91,75 @@ def summarize(r):
     r["execution"]["complete_submission"]=counts["completed"]==100
     r["execution"]["updated_at"]=now()
     return r
+def verify_submission(c, path, report=None):
+    check_catalog(c)
+    with zipfile.ZipFile(path) as z, tempfile.TemporaryDirectory() as temp:
+        root=Path(temp)
+        infos=z.infolist(); names=[x.filename for x in infos]
+        require(len(names)==len(set(names)) and all(safe(n) for n in names),"Duplicate or unsafe ZIP paths")
+        require(sum(x.file_size for x in infos)<=100_000_000,"Output ZIP exceeds 100 MB uncompressed")
+        require("engineering-report.json" in names and z.testzip() is None,"Missing report or corrupt ZIP")
+        r=json.loads(z.read("engineering-report.json"))
+        if report: require(read(report)==r,"Standalone report differs from archived report")
+        require(r.get("format")=="ceb-engineering-report-1" and r.get("dataset_id")==DATASET and r.get("input_sha256") in (None,SHA),"Wrong report identity")
+        require(isinstance(r.get("run_id"),str) and r["run_id"].strip(),"Missing run ID")
+        require(isinstance(r.get("tasks"),list) and len(r["tasks"])==100,"Expected 100 task records")
+        listed=set()
+        for t in r["tasks"]:
+            require(isinstance(t.get("artifacts"),list),"Missing artifacts")
+            listed.update(t["artifacts"])
+        require(set(names)==listed|{"engineering-report.json"},"Unexpected or missing ZIP member")
+        for n in listed:
+            require(safe(n),"Invalid output path")
+            p=root/n;p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(z.read(n))
+        for t,ct in zip(r["tasks"],c["tasks"]):check_task(t,ct,root)
+        e=r.get("execution");require(isinstance(e,dict) and e.get("protocol")==PROTOCOL,"No execution protocol")
+        manifest=e.get("artifact_manifest");require(isinstance(manifest,list) and len(manifest)==len(listed) and {x["path"] for x in manifest}==listed,"Artifact manifest differs")
+        for x in manifest:
+            p=artifact(root,x["path"]);require(x["bytes"]==p.stat().st_size and x["sha256"]==sha(p),"Artifact integrity failure: "+x["path"])
+        require(all(t["wall_seconds"] is None or duration(t["wall_seconds"]) for t in r["tasks"]),"Invalid wall time")
+        counts={k:sum(t["status"]==k for t in r["tasks"]) for k in STATUSES}
+        measured=[t for t in r["tasks"] if duration(t["wall_seconds"])]
+        require(e.get("counts")==counts and e.get("measured_tasks")==len(measured) and e.get("attempted_tasks")==100-counts["not_run"],"Incorrect summary")
+        require(e.get("complete_submission")==all(t["status"]=="completed" for t in r["tasks"]),"Incorrect completion claim")
+        require(e.get("next_task")==next((t["number"] for t in r["tasks"] if t["status"]=="not_run"),None),"Incorrect next task")
+        source=r["timing"]["source"]
+        require(source in ("none","external","chat_observed","agent_monotonic"),"Invalid timing source")
+        if source=="agent_monotonic":
+            events=e.get("clock_events");require(isinstance(events,list),"Missing clock events")
+            by={}
+            for v in events:
+                n=v["number"];require(isinstance(n,int) and 1<=n<=100 and n not in by,"Invalid clock event")
+                by[n]=v;require(v["wall_seconds"]==r["tasks"][n-1]["wall_seconds"],"Clock event differs from report")
+                if v["wall_seconds"] is not None:
+                    require(v["source"]=="agent_monotonic" and abs((datetime.fromisoformat(v["end_utc"])-datetime.fromisoformat(v["start_utc"])).total_seconds()-v["wall_seconds"])<5,"Clock event inconsistent")
+            require(all(t["number"] in by for t in measured),"Measured task has no timing event")
+        if source=="none": require(not measured and all(r["timing"].get(k) is None for k in ("delivery_seconds","setup_seconds","solve_seconds","verification_seconds","total_seconds")),"Time asserted without a clock")
+        total=sum(t["wall_seconds"] for t in measured)
+        solve=r["timing"]["solve_seconds"]
+        require((not measured and solve is None) or (measured and duration(solve) and abs(solve-total)<0.001),"Wrong sum of measured task times")
+        return {"structural_validation":"pass","counts":counts,"measured_tasks":len(measured),"archive_verified_claim":r["input_sha256"]==SHA,"engineering_correctness":"not_assessed","external_timing":"not_authenticated"}
 def main():
     a=argparse.ArgumentParser()
     a.add_argument("--workspace",default="ceb-run")
     sub=a.add_subparsers(dest="cmd",required=True)
+    sub.add_parser("start")
+    v=sub.add_parser("verify");v.add_argument("--catalog",required=True);v.add_argument("--zip",required=True);v.add_argument("--report")
     i=sub.add_parser("init");i.add_argument("--catalog",required=True);i.add_argument("--model",required=True);i.add_argument("--run-id",required=True);i.add_argument("--archive");i.add_argument("--platform",default=None);i.add_argument("--effort",default=None)
     b=sub.add_parser("begin");b.add_argument("number",type=int)
     e=sub.add_parser("end");e.add_argument("number",type=int);e.add_argument("record")
     sub.add_parser("checkpoint")
     z=sub.add_parser("finalize");z.add_argument("--delivery-log")
-    args=a.parse_args(); w=Path(args.workspace).resolve(); w.mkdir(parents=True,exist_ok=True)
+    args=a.parse_args()
+    if args.cmd=="verify": print(json.dumps(verify_submission(read(args.catalog),args.zip,args.report)));return
+    w=Path(args.workspace).resolve(); w.mkdir(parents=True,exist_ok=True)
     rp=w/"engineering-report.json"; cp=w/"catalog.json"; st=w/"clock.json"; root=w/"outputs"; root.mkdir(exist_ok=True)
+    pre=w/"delivery-clock.json"
+    if args.cmd=="start":
+        require(not rp.exists() and not pre.exists(),"Start already recorded; preserve clock")
+        put(pre,stamp());print("START",pre);return
     if args.cmd=="init":
+        init_start=stamp()
         require(not rp.exists(),"Existing run; resume rather than overwrite")
         c=read(args.catalog);check_catalog(c)
         verified=None
@@ -93,7 +170,12 @@ def main():
                 require(json.loads(z.read("engineering.json"))==c,"Catalog differs from verified ZIP")
             verified=SHA
         r={"format":"ceb-engineering-report-1","dataset_id":DATASET,"run_id":args.run_id,"model":{"name":args.model,"reasoning_effort":args.effort,"platform":args.platform},"input_sha256":verified,"timing":{"source":"agent_monotonic","delivery_seconds":None,"setup_seconds":None,"solve_seconds":None,"verification_seconds":None,"total_seconds":None},"tasks":[empty_task(t) for t in c["tasks"]],"delivery_attempts":[],"execution":{"protocol":PROTOCOL,"started_at":now(),"timing_scope":"sequential task start through persisted result; excludes delivery, pauses and final packaging; self-instrumented, not external","clock_events":[],"artifact_manifest":[]}}
-        put(cp,c);put(st,{"active":None});put(rp,summarize(r)); print(rp);return
+        run_start=read(pre) if pre.exists() else init_start
+        r["execution"]["run_start_clock"]=run_start
+        r["execution"]["timing_scope"]="monotonic self-instrumented task durations; total elapsed from start (or init) through final validation, includes pauses and excludes final serialization; not independent external wall time"
+        r["execution"]["delivery_clock_scope"]="start to init (includes preparation)" if pre.exists() else "not measured before init"
+        r["timing"]["delivery_seconds"]=elapsed(run_start,init_start) if pre.exists() else None
+        put(cp,c);put(st,{"active":None});r["timing"]["setup_seconds"]=elapsed(init_start,stamp());put(rp,summarize(r)); print(rp);return
     c=read(cp);r=read(rp);clock=read(st);check_catalog(c)
     if args.cmd=="begin":
         n=args.number;require(1<=n<=100,"Task outside range")
@@ -115,12 +197,15 @@ def main():
     if args.cmd=="checkpoint":
         put(rp,summarize(r));print(json.dumps(r["execution"]["counts"]), "next:",r["execution"]["next_task"],"active:",clock["active"]);return
     require(clock["active"] is None,"Finalize after ending the active task or return checkpoint")
+    verification_start=stamp()
     if args.delivery_log:
         r["delivery_attempts"]=read(args.delivery_log);require(isinstance(r["delivery_attempts"],list),"Delivery log must be an array")
     names=set()
     for t,ct in zip(r["tasks"],c["tasks"]):
         check_task(t,ct,root); names.update(t["artifacts"])
     r["execution"]["artifact_manifest"]=[{"path":n,"bytes":artifact(root,n).stat().st_size,"sha256":sha(artifact(root,n))} for n in sorted(names)]
+    r["timing"]["verification_seconds"]=elapsed(verification_start,stamp())
+    r["timing"]["total_seconds"]=elapsed(r["execution"]["run_start_clock"],stamp()) if "run_start_clock" in r["execution"] else None
     put(rp,summarize(r));out=w/"engineering-outputs.zip"
     with zipfile.ZipFile(out,"w",compression=zipfile.ZIP_DEFLATED) as z:
         z.write(rp,"engineering-report.json")
@@ -130,5 +215,5 @@ def main():
         require(json.loads(z.read("engineering-report.json"))==r,"Report differs in ZIP")
         for x in r["execution"]["artifact_manifest"]:
             require(hashlib.sha256(z.read(x["path"])).hexdigest()==x["sha256"],"Artifact hash mismatch")
-    print("FINAL",rp,out,json.dumps(r["execution"]["counts"]), "measured",r["execution"]["measured_tasks"])
+    print("FINAL",rp,out,json.dumps(verify_submission(c,out,rp)))
 if __name__=="__main__": main()

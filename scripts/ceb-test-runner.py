@@ -7,6 +7,7 @@ with tempfile.TemporaryDirectory() as td:
         a=subprocess.run([sys.executable,str(runner),"--workspace",str(work),*map(str,args)],capture_output=True,text=True)
         assert (a.returncode==0)==ok,(args,a.stdout,a.stderr)
         return a.stdout
+    call("start");call("start",ok=False)
     call("init","--catalog",p/"engineering.json","--archive",p/"engineering-inputs.zip","--model","TEST_SYNTHETIC_NOT_BENCHMARK","--run-id","synthetic-ci")
     r=work/"engineering-report.json"
     def read():return json.loads(r.read_text())
@@ -22,7 +23,8 @@ with tempfile.TemporaryDirectory() as td:
     call("begin",2);t=read()["tasks"][1];t.update(status="blocked",issue={"category":"missing_input","code":"synthetic","description":"test","attempts":[]});rec.write_text(json.dumps(t));call("end",2,rec,ok=False)
     t["issue"]["attempts"]=["synthetic read failure"];rec.write_text(json.dumps(t));call("end",2,rec)
     call("checkpoint");call("finalize")
-    rr=read();assert rr["execution"]["measured_tasks"]==3 and rr["execution"]["attempted_tasks"]==3
+    rr=read();assert rr["timing"]["delivery_seconds"]>0 and rr["timing"]["setup_seconds"]>0 and rr["timing"]["verification_seconds"]>0 and rr["timing"]["total_seconds"]>0
+    assert rr["execution"]["measured_tasks"]==3 and rr["execution"]["attempted_tasks"]==3
     assert rr["execution"]["counts"]["not_run"]==97 and rr["execution"]["next_task"]==3 and rr["execution"]["complete_submission"] is False
     assert abs(rr["timing"]["solve_seconds"]-sum(t["wall_seconds"] or 0 for t in rr["tasks"]))<1e-6
     with zipfile.ZipFile(work/"engineering-outputs.zip") as z:assert z.testzip() is None and json.loads(z.read("engineering-report.json"))==rr
@@ -32,6 +34,11 @@ with tempfile.TemporaryDirectory() as td:
     for n in t["artifacts"]:(work/"outputs"/n).write_text("synthetic,fixture\n")
     call("end",11,rec);call("finalize")
     rr=read();assert len(rr["execution"]["artifact_manifest"])==2
+    call("verify","--catalog",p/"engineering.json","--zip",work/"engineering-outputs.zip","--report",r)
+    bad=w/"tampered.zip"
+    with zipfile.ZipFile(work/"engineering-outputs.zip") as src,zipfile.ZipFile(bad,"w") as dst:
+        for n in src.namelist():dst.writestr(n,b"changed,content\n" if n=="connection-points.csv" else src.read(n))
+    call("verify","--catalog",p/"engineering.json","--zip",bad,ok=False)
     with zipfile.ZipFile(work/"engineering-outputs.zip") as z:
         for x in rr["execution"]["artifact_manifest"]:assert hashlib.sha256(z.read(x["path"])).hexdigest()==x["sha256"]
 s=(p/"engineering-start.txt").read_text()
