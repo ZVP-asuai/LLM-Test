@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Owner-only: obtain known original documents, run preflight, make a private chat attachment.
 Never publishes documents or answers. Requires PyMuPDF; does not run any LLM."""
-import argparse, hashlib, json, pathlib, subprocess, sys, urllib.request, zipfile
+import argparse, hashlib, json, pathlib, shutil, subprocess, sys, urllib.request, zipfile
 from pathlib import Path
 def read(p):return json.loads(p.read_text(encoding='utf-8'))
 def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -27,7 +27,11 @@ def main():
             acquisitions[name]={'ok':True,'sha256':ref['sha256']}
         except Exception as e:acquisitions[name]={'ok':False,'error':str(e)}
     (a.output/'acquisition.json').write_text(json.dumps(acquisitions,indent=2),encoding='utf-8')
-    cmd=[sys.executable,str(script),'--pack',str(a.pack),'--sources',str(a.sources),'--output',str(a.output/'prepared')]
+    staged=a.output/'checked-sources';staged.mkdir()
+    for name in {**c['source_documents'],**c['private_documents']}:
+        src=a.sources/name
+        if src.is_file() and (name not in acquisitions or acquisitions[name]['ok']):shutil.copyfile(src,staged/name)
+    cmd=[sys.executable,str(script),'--pack',str(a.pack),'--sources',str(staged),'--output',str(a.output/'prepared')]
     if a.approved:cmd+=['--approved',str(a.approved)]
     if a.runtime:cmd+=['--runtime',str(a.runtime)]
     subprocess.run(cmd,check=True)
