@@ -5,7 +5,8 @@
 ## Главная панель
 - [HTML Dashboard](docs/index.html)
 - [CEB 2.0 — 50 заданий и полные промпты](docs/ceb/index.html)
-- [CEB 2.0 — результаты и эталон GPT-6.2](docs/ceb/v2/index.html)
+- [CEB 2.0 — сравнение моделей, эталон GPT-6.2 и графики](docs/ceb/v2/index.html)
+- [CEB 2.0 — журнал самопроверки эталона](docs/ceb/v2/reference-audit.json)
 - [CEB 2.0 — машиночитаемый манифест](docs/ceb/tasks.json)
 - [Архитектура](docs/architecture.md)
 - [Методика испытаний](docs/experiment-protocol.md)
