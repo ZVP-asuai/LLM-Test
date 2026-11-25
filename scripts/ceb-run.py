@@ -9,6 +9,7 @@ def write(p,x):p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dump
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def now():return dt.datetime.now(dt.timezone.utc).isoformat(timespec='milliseconds').replace('+00:00','Z')
 def safe(root,n):
+    if not isinstance(n,str):raise ValueError('path must be a string')
     p=root/n
     if not isinstance(n,str) or Path(n).is_absolute() or '..' in Path(n).parts or '\\' in n or not p.resolve().is_relative_to(root.resolve()) or p.is_symlink():raise ValueError('unsafe path '+str(n))
     return p
@@ -59,13 +60,18 @@ def main():
                 if not src.is_file():break
                 dst=work/'inputs'/'LC1D09B7.step';shutil.copyfile(src,dst);dst.chmod(0o444);files.append('inputs/LC1D09B7.step')
             else:
-                request={'id':id,'prompt':packet['prompt'],'clarification':packet['clarification'],'inputs':files,'source_maps':packet['source_maps'],'output_contract':{'common':fmt['common'],'task':fmt['tasks'].get(id,{})},'artifact_requirements':packet['artifacts'],'allowed_tools':t['tool_allowlist'],'search_policy':t['search_policy'],'output_directory':'artifacts','time_budget_seconds':remaining}
+                source_maps=packet['source_maps']
+                for name,s in source_maps.items():
+                    s['slice_path']='inputs/documents/'+name.removesuffix('.pdf')+'/selected.pdf'
+                    for page in s['pages']:
+                        if page.get('image'):page['image']='inputs/'+page['image']
+                request={'id':id,'prompt':packet['prompt'],'clarification':packet['clarification'],'inputs':files,'source_maps':source_maps,'output_contract':{'common':fmt['common'],'task':fmt['tasks'].get(id,{})},'artifact_requirements':packet['artifacts'],'allowed_tools':t['tool_allowlist'],'search_policy':t['search_policy'],'output_directory':'artifacts','time_budget_seconds':remaining}
                 write(work/'request.json',request);r['started_at']=now();tick=time.monotonic()
                 response=None;reason='runtime_error';status='failed';proc=None
                 try:
                     with (work/'request.json').open('rb') as inp,(work/'worker.stdout.json').open('wb') as stdout,(work/'worker.stderr.log').open('wb') as stderr:
                         proc=subprocess.Popen(a.worker,cwd=work,stdin=inp,stdout=stdout,stderr=stderr,start_new_session=(os.name=='posix'))
-                        try:code=proc.wait(timeout=remaining)
+                        try:code=proc.wait(timeout=max(0.001,limit-(time.monotonic()-start)))
                         except subprocess.TimeoutExpired:
                             if os.name=='posix':os.killpg(proc.pid,signal.SIGKILL)
                             else:proc.kill()
