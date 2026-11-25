@@ -1,0 +1,154 @@
+{
+  "suite_version": "3.0-review",
+  "profile": "full100",
+  "status": "internal_adjudication_not_externally_certified",
+  "source_sha256": "176bc4336fbcefa15e700df49dffe778202efa0548045dc74dda1f000e16a1db",
+  "total_weight": 221,
+  "comparable_weight": 198,
+  "comparable_tasks": 87,
+  "excluded_positive_weight_tasks": [
+    2,
+    4,
+    5,
+    10,
+    11,
+    13,
+    44
+  ],
+  "qualification_tasks": [
+    45,
+    46,
+    47,
+    48,
+    49,
+    50
+  ],
+  "rubric": [
+    1,
+    0.75,
+    0.5,
+    0.25,
+    0
+  ],
+  "runs": [
+    {
+      "model": "GPT-6.2",
+      "run_id": "CEB3-GPT62-20261125",
+      "reasoning_effort": null,
+      "score": 198,
+      "quality_percent": 100,
+      "completed": 89,
+      "partial": 5,
+      "blocked": 6,
+      "total_seconds": 511.45,
+      "delivery_seconds": 30.45,
+      "setup_seconds": 80.69,
+      "solve_seconds": 325.56,
+      "verification_seconds": 74.76,
+      "full_suite_score": null,
+      "artifacts": "https://drive.google.com/file/d/1Png_o3VE68vCv2IjuuXMaV1_6z81edsH/view",
+      "deductions": []
+    },
+    {
+      "model": "GPT-6",
+      "run_id": "ceb3-gpt6-20261125",
+      "reasoning_effort": null,
+      "score": 182.75,
+      "quality_percent": 92.29797979797979,
+      "completed": 87,
+      "partial": 7,
+      "blocked": 6,
+      "total_seconds": 476.671,
+      "delivery_seconds": null,
+      "setup_seconds": null,
+      "solve_seconds": null,
+      "verification_seconds": null,
+      "full_suite_score": null,
+      "artifacts": "https://drive.google.com/file/d/1PC5avy2lQu5nwJ6pFpQhBBkvmjOuu_lk/view",
+      "deductions": [
+        {
+          "number": 7,
+          "lost": 1.5
+        },
+        {
+          "number": 9,
+          "lost": 1
+        },
+        {
+          "number": 21,
+          "lost": 1
+        },
+        {
+          "number": 27,
+          "lost": 0.5
+        },
+        {
+          "number": 30,
+          "lost": 0.5
+        },
+        {
+          "number": 32,
+          "lost": 0.5
+        },
+        {
+          "number": 34,
+          "lost": 0.75
+        },
+        {
+          "number": 72,
+          "lost": 1.5
+        },
+        {
+          "number": 74,
+          "lost": 0.75
+        },
+        {
+          "number": 77,
+          "lost": 0.5
+        },
+        {
+          "number": 81,
+          "lost": 1.5
+        },
+        {
+          "number": 83,
+          "lost": 1.5
+        },
+        {
+          "number": 84,
+          "lost": 0.75
+        },
+        {
+          "number": 90,
+          "lost": 0.75
+        },
+        {
+          "number": 96,
+          "lost": 0.75
+        },
+        {
+          "number": 100,
+          "lost": 1.5
+        }
+      ]
+    }
+  ],
+  "reference": {
+    "status": "review_not_externally_certified",
+    "tasks": 100,
+    "prepared": 89,
+    "partial": 5,
+    "blocked": 6,
+    "internal_checks": 277,
+    "fully_checked_tasks": 31,
+    "further_review_tasks": 63,
+    "archive": "https://drive.google.com/file/d/1VBmdU7Yv3hBJck1FNIA9jRw2IMMqm1mE/view",
+    "audit": "https://drive.google.com/file/d/1VT0lqGJdYZ5vTWvmu5elDovCJWmOGaFc/view",
+    "cad_viewer": "https://drive.google.com/file/d/1Hp5Wra93fSPAL0iDQ1FssmeVe_rF9ihC/view"
+  },
+  "notes": [
+    "Raw model statuses are not scores. Full-suite score unavailable. Same 198-point denominator for these two runs only.",
+    "Owner review, not independent external certification. Reasoning effort absent from raw reports.",
+    "Do not mix revisions or add GLM scores without the same rubric and comparable set."
+  ]
+}
