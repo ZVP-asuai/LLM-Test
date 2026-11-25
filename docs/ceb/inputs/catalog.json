@@ -1,0 +1,308 @@
+{
+  "version": "2.0-review",
+  "manifest_blob_sha": "f074e90e50a6aa4d5deb54de49fa8a333adf099f",
+  "variant_id": "ceb-2.0-public-preview",
+  "notes": "Публичные входы, не эталоны. Синтетические PDF восстановлены по исходному учебному материалу; контекстные preview не подтверждают размер токенов. Внешние PDF не входят в ZIP; сверяйте редакции и страницы. Не использовать исходник генератора для решения.",
+  "files": {
+    "lab.service": {
+      "kind": "inline_fixture",
+      "path": "fixtures/lab.service",
+      "url": "https://zvp-asuai.github.io/LLM-Test/ceb/inputs/fixtures/lab.service"
+    },
+    "revision.csv": {
+      "kind": "inline_fixture",
+      "path": "fixtures/revision.csv",
+      "url": "https://zvp-asuai.github.io/LLM-Test/ceb/inputs/fixtures/revision.csv"
+    },
+    "bom.csv": {
+      "kind": "inline_fixture",
+      "path": "fixtures/bom.csv",
+      "url": "https://zvp-asuai.github.io/LLM-Test/ceb/inputs/fixtures/bom.csv"
+    },
+    "cable.csv": {
+      "kind": "inline_fixture",
+      "path": "fixtures/cable.csv",
+      "url": "https://zvp-asuai.github.io/LLM-Test/ceb/inputs/fixtures/cable.csv"
+    },
+    "catalog.html": {
+      "kind": "inline_fixture",
+      "path": "fixtures/catalog.html",
+      "url": "https://zvp-asuai.github.io/LLM-Test/ceb/inputs/fixtures/catalog.html"
+    },
+    "dashboard-input.html": {
+      "kind": "inline_fixture",
+      "path": "fixtures/dashboard-input.html",
+      "url": "https://zvp-asuai.github.io/LLM-Test/ceb/inputs/fixtures/dashboard-input.html"
+    },
+    "product-page.html": {
+      "kind": "inline_fixture",
+      "path": "fixtures/product-page.html",
+      "url": "https://zvp-asuai.github.io/LLM-Test/ceb/inputs/fixtures/product-page.html"
+    },
+    "runs.json": {
+      "kind": "inline_fixture",
+      "path": "fixtures/runs.json",
+      "url": "https://zvp-asuai.github.io/LLM-Test/ceb/inputs/fixtures/runs.json"
+    },
+    "db.sql": {
+      "kind": "inline_fixture",
+      "path": "fixtures/db.sql",
+      "url": "https://zvp-asuai.github.io/LLM-Test/ceb/inputs/fixtures/db.sql"
+    },
+    "compose.yaml": {
+      "kind": "inline_fixture",
+      "path": "fixtures/compose.yaml",
+      "url": "https://zvp-asuai.github.io/LLM-Test/ceb/inputs/fixtures/compose.yaml"
+    },
+    "backup-manifest.json": {
+      "kind": "inline_fixture",
+      "path": "fixtures/backup-manifest.json",
+      "url": "https://zvp-asuai.github.io/LLM-Test/ceb/inputs/fixtures/backup-manifest.json"
+    },
+    "untrusted-document.txt": {
+      "kind": "inline_fixture",
+      "path": "fixtures/untrusted-document.txt",
+      "url": "https://zvp-asuai.github.io/LLM-Test/ceb/inputs/fixtures/untrusted-document.txt"
+    },
+    "tool-catalog.json": {
+      "kind": "inline_fixture",
+      "path": "fixtures/tool-catalog.json",
+      "url": "https://zvp-asuai.github.io/LLM-Test/ceb/inputs/fixtures/tool-catalog.json"
+    },
+    "spread.pdf": {
+      "kind": "synthetic_pdf",
+      "path": "fixtures/spread.pdf",
+      "url": "https://zvp-asuai.github.io/LLM-Test/ceb/inputs/fixtures/spread.pdf"
+    },
+    "eplan.pdf": {
+      "kind": "synthetic_pdf",
+      "path": "fixtures/eplan.pdf",
+      "url": "https://zvp-asuai.github.io/LLM-Test/ceb/inputs/fixtures/eplan.pdf"
+    },
+    "pid.pdf": {
+      "kind": "synthetic_pdf",
+      "path": "fixtures/pid.pdf",
+      "url": "https://zvp-asuai.github.io/LLM-Test/ceb/inputs/fixtures/pid.pdf"
+    },
+    "context32-preview.txt": {
+      "kind": "context_preview",
+      "path": "context32-preview.txt",
+      "url": "https://zvp-asuai.github.io/LLM-Test/ceb/inputs/context32-preview.txt",
+      "qualification": "native tokenization not certified"
+    },
+    "context128-preview.txt": {
+      "kind": "context_preview",
+      "path": "context128-preview.txt",
+      "url": "https://zvp-asuai.github.io/LLM-Test/ceb/inputs/context128-preview.txt",
+      "qualification": "native tokenization not certified"
+    },
+    "context256-preview.txt": {
+      "kind": "context_preview",
+      "path": "context256-preview.txt",
+      "url": "https://zvp-asuai.github.io/LLM-Test/ceb/inputs/context256-preview.txt",
+      "qualification": "native tokenization not certified"
+    },
+    "atv_manual.pdf": {
+      "kind": "external_source",
+      "path": "sources/atv_manual.pdf",
+      "url": "https://download.se.com/files?p_Doc_Ref=NVE41289&p_File_Name=ATV320_Installation_manual_EN_NVE41289_09.pdf&p_enDocType=User+guide",
+      "mirrors": [
+        "https://ita-sacchi.mo.cloudinary.net/PRODUCT/DOCUMENT/hlr-system/SCHNEIDER/MD14_BMECAT_20250623/TEATV320U07N4C.pdf?ts=1751087297244"
+      ],
+      "landing": "https://www.se.com/ca/en/download/document/NVE41289/",
+      "source_locked": false
+    },
+    "atv_quick.pdf": {
+      "kind": "external_source",
+      "path": "sources/atv_quick.pdf",
+      "url": "https://download.se.com/files?p_Doc_Ref=NVE21763&p_File_Name=ATV320_Getting_Started_EN_NVE21763_04.pdf&p_enDocType=Instruction+sheet",
+      "mirrors": [
+        "https://manuals.plus/m/4f1b0fa7332e8eea69860ca085052d8b8bb7e3fb7e9154e27a0113158b526e1d.pdf"
+      ],
+      "landing": "https://www.se.com/us/en/download/document/NVE21763/",
+      "source_locked": false
+    },
+    "contactor.pdf": {
+      "kind": "external_source",
+      "path": "sources/contactor.pdf",
+      "url": "https://download.se.com/files?p_File_Name=LC1D09B7_2D+Sales+Drawing.pdf&p_enDocType=CAD",
+      "mirrors": [
+        "https://docs.rs-online.com/e3c0/A700000008961279.pdf",
+        "https://images.tuotetieto.fi/1739426_DocDimension_Drawing_A1886176.pdf"
+      ],
+      "landing": "https://www.se.com/my/en/product/LC1D09B7/",
+      "source_locked": false
+    },
+    "abb_af.pdf": {
+      "kind": "external_source",
+      "path": "sources/abb_af.pdf",
+      "url": "https://library.e.abb.com/public/e166a94cb6c148f6bf180fc14261407e/1SBC101439D0201.pdf",
+      "mirrors": [],
+      "landing": null,
+      "source_locked": false
+    },
+    "war_and_peace.txt": {
+      "kind": "external_source",
+      "path": "sources/war_and_peace.txt",
+      "url": "https://www.gutenberg.org/cache/epub/2600/pg2600.txt",
+      "mirrors": [],
+      "landing": null,
+      "source_locked": false
+    },
+    "dyneo.pdf": {
+      "kind": "external_source",
+      "path": "sources/dyneo.pdf",
+      "url": "https://www.leroy-somer.com/documentation_pdf/5729_en.pdf",
+      "mirrors": [],
+      "landing": null,
+      "source_locked": false
+    },
+    "contactor_datasheet.pdf": {
+      "kind": "external_source",
+      "path": "sources/contactor_datasheet.pdf",
+      "url": "https://inalelectric.com/wp-content/uploads/2024/09/LC1D09B7.pdf",
+      "mirrors": [],
+      "landing": null,
+      "source_locked": false
+    },
+    "tool service": {
+      "kind": "tool_service",
+      "url": "https://zvp-asuai.github.io/LLM-Test/ceb/inputs/fixtures/tool-catalog.json",
+      "path": "fixtures/tool-catalog.json",
+      "note": "Локальный эмулятор инструмента search/read/multiply в комплекте; в чате без вызовов возможен только частичный анализ."
+    }
+  },
+  "task_inputs": {
+    "engineering": [],
+    "pdf_abb": [
+      "abb_af.pdf",
+      "abb_af.pdf",
+      "abb_af.pdf",
+      "abb_af.pdf"
+    ],
+    "pdf_spread": [
+      "spread.pdf",
+      "spread.pdf",
+      "spread.pdf",
+      "spread.pdf"
+    ],
+    "pdf_real_spread": [
+      "dyneo.pdf",
+      "dyneo.pdf"
+    ],
+    "vfd": [
+      "atv_quick.pdf",
+      "atv_quick.pdf",
+      "atv_manual.pdf"
+    ],
+    "eplan": [
+      "eplan.pdf",
+      "eplan.pdf",
+      "eplan.pdf"
+    ],
+    "plc": [],
+    "pid": [
+      "pid.pdf"
+    ],
+    "devops": [
+      "lab.service"
+    ],
+    "cad": [
+      "contactor.pdf:1",
+      "contactor_datasheet.pdf:1,6–9"
+    ],
+    "cad_connections": [
+      "contactor_datasheet.pdf",
+      "Результат предыдущего задания: LC1D09B7.step"
+    ],
+    "tools": [
+      "tool service"
+    ],
+    "context32": [
+      "context32-preview.txt"
+    ],
+    "motor_current": [],
+    "pt100": [],
+    "analog_counts": [],
+    "uncertainty": [],
+    "tank": [],
+    "cabinet_heat": [],
+    "ups": [],
+    "motor_selection": [],
+    "valve_kv": [],
+    "io_capacity": [],
+    "loop_barrier": [],
+    "plc_timers": [],
+    "plc_interlock": [],
+    "alarm_matrix": [],
+    "revision_audit": [
+      "revision.csv"
+    ],
+    "bom_audit": [
+      "bom.csv"
+    ],
+    "cable_audit": [
+      "cable.csv"
+    ],
+    "html_rowspan": [
+      "catalog.html"
+    ],
+    "html_dashboard_read": [
+      "dashboard-input.html"
+    ],
+    "html_selection": [
+      "product-page.html"
+    ],
+    "html_build": [
+      "runs.json"
+    ],
+    "sql_runs": [
+      "db.sql"
+    ],
+    "docker_ports": [
+      "compose.yaml"
+    ],
+    "linux_permissions": [],
+    "gpu_kv": [],
+    "llm_metrics": [],
+    "network_subnet": [],
+    "backup_integrity": [
+      "backup-manifest.json"
+    ],
+    "tool_schema": [],
+    "prompt_injection": [
+      "untrusted-document.txt"
+    ],
+    "context128": [
+      "context128-preview.txt"
+    ],
+    "context256": [
+      "context256-preview.txt"
+    ],
+    "office": [],
+    "standards": [],
+    "live_search": [],
+    "eplan_api": [],
+    "protocols": []
+  },
+  "dependencies": {
+    "cad_connections": [
+      "cad"
+    ],
+    "standards": [
+      "licensed normative documents supplied by owner"
+    ],
+    "eplan_api": [
+      "SDK for full verification"
+    ],
+    "context32": [
+      "native tokenizer/server context proof"
+    ],
+    "context128": [
+      "native tokenizer/server context proof"
+    ],
+    "context256": [
+      "native tokenizer/server context proof"
+    ]
+  }
+}

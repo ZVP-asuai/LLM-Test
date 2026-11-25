@@ -1,0 +1,465 @@
+{
+  "format": "ceb-chat-result-1",
+  "suite_version": "2.0-review",
+  "manifest_blob_sha": "f074e90e50a6aa4d5deb54de49fa8a333adf099f",
+  "run_id": null,
+  "variant_id": "ceb-2.0-public-preview",
+  "model": {
+    "name": null,
+    "developer": null,
+    "agent": null,
+    "reasoning_effort": null
+  },
+  "tasks": [
+    {
+      "id": "engineering",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "pdf_abb",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "pdf_spread",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "pdf_real_spread",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "vfd",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "eplan",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "plc",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "pid",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "devops",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "cad",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "cad_connections",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "tools",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "context32",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "motor_current",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "pt100",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "analog_counts",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "uncertainty",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "tank",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "cabinet_heat",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "ups",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "motor_selection",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "valve_kv",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "io_capacity",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "loop_barrier",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "plc_timers",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "plc_interlock",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "alarm_matrix",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "revision_audit",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "bom_audit",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "cable_audit",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "html_rowspan",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "html_dashboard_read",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "html_selection",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "html_build",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "sql_runs",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "docker_ports",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "linux_permissions",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "gpu_kv",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "llm_metrics",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "network_subnet",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "backup_integrity",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "tool_schema",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "prompt_injection",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "context128",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "context256",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "office",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "standards",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "live_search",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "eplan_api",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    },
+    {
+      "id": "protocols",
+      "status": "not_run",
+      "reason_code": "not_started",
+      "answer": null,
+      "evidence": [],
+      "notes": null,
+      "artifacts": []
+    }
+  ]
+}

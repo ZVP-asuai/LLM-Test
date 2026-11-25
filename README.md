@@ -8,6 +8,8 @@
 - [CEB 2.0 — сравнение моделей, эталон GPT-6.2 и графики](docs/ceb/v2/index.html)
 - [CEB 2.0 — журнал самопроверки эталона](docs/ceb/v2/reference-audit.json)
 - [CEB 2.0 — машиночитаемый манифест](docs/ceb/tasks.json)
+- [CEB — запуск обычного чата](docs/ceb/v2/chat-start.txt)
+- [CEB — найденные проблемы и приёмка](docs/ceb/diagnostics.html)
 - [Архитектура](docs/architecture.md)
 - [Методика испытаний](docs/experiment-protocol.md)
 - [Операционные ограничения](docs/operations.md)

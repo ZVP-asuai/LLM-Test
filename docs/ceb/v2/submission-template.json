@@ -1,9 +1,9 @@
 {
-  "schema_version": "2.1",
+  "schema_version": "2.2",
   "suite_version": "2.0-review",
   "run_kind": "model_run",
   "run_id": null,
-  "variant_id": null,
+  "variant_id": "ceb-2.0-public-preview",
   "manifest_blob_sha": "f074e90e50a6aa4d5deb54de49fa8a333adf099f",
   "fixture_sha256": null,
   "status": "incomplete",
@@ -1132,5 +1132,9 @@
       "artifact_count": null,
       "reason_code": "not_started"
     }
-  ]
+  ],
+  "execution_mode": "orchestrated",
+  "telemetry_source": "external_orchestrator",
+  "context_isolated": null,
+  "network_isolated": null
 }

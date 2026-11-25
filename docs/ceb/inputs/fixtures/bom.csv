@@ -1,0 +1,8 @@
+tag,article,qty,source
+K1,AF-16,1,schematic
+K2,AF-16,1,schematic
+Q1,CB-6,1,schematic
+X1,TB-2,8,schematic
+K1,AF-16,1,repeat_view
+K3,AF-16,1,schematic
+X2,TB-2,4,schematic
