@@ -1,0 +1,6 @@
+doc,rev,state,tag,range,unit
+TZ,2,issued,PT17,0-16,bar
+TZ,3,draft,PT17,0-25,bar
+SPEC,5,issued,PT17,0-10,bar
+SPEC,6,draft,PT17,0-16,bar
+PASSPORT,1,issued,PT17,0-10,bar

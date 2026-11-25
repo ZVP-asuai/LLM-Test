@@ -1,0 +1,6 @@
+12:00:01 [server] request context=65536, gpu free=4100MiB
+12:00:03 [cgroup] memory.current=8589934592 memory.max=8589934592
+12:00:04 [kernel] Memory cgroup out of memory: Killed process 781 (llama-server) anon-rss:7020MiB
+12:00:04 [cgroup] memory.events oom_kill 1
+12:00:05 [proxy] 502 upstream connection refused
+12:00:09 [gpu] free=15021MiB no CUDA out of memory message

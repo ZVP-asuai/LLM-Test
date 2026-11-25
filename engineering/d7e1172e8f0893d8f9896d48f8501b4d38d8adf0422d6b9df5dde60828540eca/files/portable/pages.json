@@ -1,0 +1,22 @@
+[
+  {
+    "full_name": "=A1+S1/1",
+    "type": "Схема",
+    "description": "Питание, ввод"
+  },
+  {
+    "full_name": "=A1+S1/2",
+    "type": "Схема",
+    "description": "Контактор \"К1\""
+  },
+  {
+    "full_name": "=A1+S1/3",
+    "type": "Отчёт",
+    "description": "Клеммы\nЛист 3"
+  },
+  {
+    "full_name": "=A1+S1/4",
+    "type": "Ведомость",
+    "description": ""
+  }
+]

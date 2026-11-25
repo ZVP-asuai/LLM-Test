@@ -1,0 +1,372 @@
+[
+  {
+    "path": "engineering-launch.txt",
+    "sha256": "1a7f47be8330d80c403de23336aff8a0a16a58af26477b5f435d216b35d9fab4",
+    "bytes": 4119
+  },
+  {
+    "path": "engineering-method.md",
+    "sha256": "81aa760881402c74efa7c42eebc8a59f23bbfdc84b5ed911dbe137f2a2ad7b77",
+    "bytes": 5429
+  },
+  {
+    "path": "engineering-report-template.json",
+    "sha256": "11e024de5c056870487d875d2907f27acb998ba177121622c0b47a7ea15485e9",
+    "bytes": 43952
+  },
+  {
+    "path": "engineering.json",
+    "sha256": "c83c7312c7be601e7d185d6374639e02505884a8ae82e6e9994a81631613815d",
+    "bytes": 147482
+  },
+  {
+    "path": "extension/allowed.csv",
+    "sha256": "58e0867c85e1169d54f6840aa246d40e2e7fcfdda5a5ac82fac953d4fb9f1337",
+    "bytes": 36
+  },
+  {
+    "path": "extension/backup/files/a.txt",
+    "sha256": "4c09e1eb0380f5b82ec2b56bbd66764c1273fe594ba150981f2de020ab802c70",
+    "bytes": 26
+  },
+  {
+    "path": "extension/backup/files/b.txt",
+    "sha256": "ac44ab8401f20dc12803494210a82904c6f41004b8175fda0534cf935df09f71",
+    "bytes": 16
+  },
+  {
+    "path": "extension/backup/files/extra.txt",
+    "sha256": "8e41cf07fdb026dcb9ca7850d19f6be7c45888b95f9dc674dc0cb98344428165",
+    "bytes": 15
+  },
+  {
+    "path": "extension/backup/manifest.json",
+    "sha256": "d57fc721ccce45c81beed157e6d2126988d319b95ec9199e754551421c5c1e31",
+    "bytes": 335
+  },
+  {
+    "path": "extension/bom-scan.pdf",
+    "sha256": "cf0c7f47c11aa554e8c72e0490d08d5f4ee8d984d3108ee29a951d3f9f64f759",
+    "bytes": 76409
+  },
+  {
+    "path": "extension/bom-scan.pdf.page-01.png",
+    "sha256": "dc5d6de2166ce14e3767328ecd5b8847b67d45c5f03dd2e7f2ac7b7b9856844a",
+    "bytes": 45305
+  },
+  {
+    "path": "extension/bom-scan.pdf.page-02.png",
+    "sha256": "f66e132e300341af7d80d82f502aa48cf39ba1daf5202a32f7a1b93a153754b4",
+    "bytes": 44688
+  },
+  {
+    "path": "extension/crossrefs.pdf",
+    "sha256": "b31f4e5d9c03eca38a31622da3fcfd48fb8a2a55ad9da4d0740acbb56e417a3a",
+    "bytes": 2972
+  },
+  {
+    "path": "extension/crossrefs.pdf.page-01.png",
+    "sha256": "6812cfd677d8edace7a5d91a6bfd9e9aada8ed2a77508a7d2d99abc4965efc71",
+    "bytes": 31035
+  },
+  {
+    "path": "extension/crossrefs.pdf.page-02.png",
+    "sha256": "dcc80b39c4ee86849b7d95c44b0f6e6b4dad67eecafaa85cbb87229822fb2b61",
+    "bytes": 29839
+  },
+  {
+    "path": "extension/crossrefs.pdf.page-03.png",
+    "sha256": "e5321b8af50f876c1da939ed716107fd91e5e7757463fb7783e008648603a240",
+    "bytes": 31687
+  },
+  {
+    "path": "extension/llm-runs.csv",
+    "sha256": "62e1e23210f2e69c1f45bb7ded0a624650b0ec38d70bc03d86d7af13d71fd79d",
+    "bytes": 551
+  },
+  {
+    "path": "extension/mock-tool.py",
+    "sha256": "5c47aed469de3bc1965b3a361ccac623a6bbfc877c5c03f0773ef2ec508fab5c",
+    "bytes": 698
+  },
+  {
+    "path": "extension/netlist.csv",
+    "sha256": "da14b08b14c709771dcfbc705fb71bb4435866e2d4595033e54c31e909b2cbac",
+    "bytes": 101
+  },
+  {
+    "path": "extension/oom.log",
+    "sha256": "2651aee3f4bbf2e27fbe138a5c4a17bf820e76b5c6596e9853775cabeac92afc",
+    "bytes": 373
+  },
+  {
+    "path": "extension/rag-corpus.jsonl",
+    "sha256": "e0777928ee966a5edbbc86a846d07df69d85d93c5b0aa8cb52e9ba61beed25b1",
+    "bytes": 542
+  },
+  {
+    "path": "extension/relay-drawing.pdf",
+    "sha256": "29b0f19d5c956eae82a5d6de8f6fdfc4c15ec6795859e2d474cd37ef0555ed6a",
+    "bytes": 2781
+  },
+  {
+    "path": "extension/relay-drawing.pdf.page-01.png",
+    "sha256": "8725273e6457b3da0379442772f47012ff7396b0fc029805338b1f6198576ee6",
+    "bytes": 68670
+  },
+  {
+    "path": "extension/revisions.pdf",
+    "sha256": "4819a14737571b1a75012a911d9523d46079d6d5cc448d6d38e09d3530f46c87",
+    "bytes": 2435
+  },
+  {
+    "path": "extension/revisions.pdf.page-01.png",
+    "sha256": "4a17c50151783c353a0133d2ee9a8ef99e3051133b78f9e106387de29c08ad58",
+    "bytes": 33521
+  },
+  {
+    "path": "extension/revisions.pdf.page-02.png",
+    "sha256": "045637165b238a00608186b151243eff847c304c253b4bd25072d39ffb20b19d",
+    "bytes": 32472
+  },
+  {
+    "path": "extension/rotated-catalog.pdf",
+    "sha256": "a73157f21ea01805c15e4243fbcc844e6c47ee9e24be1de29d5d38c8ba50d6f7",
+    "bytes": 79023
+  },
+  {
+    "path": "extension/rotated-catalog.pdf.page-01.png",
+    "sha256": "c43b7aa5f6cd815ba16b0603e413543e0cb1efc385c28d46bce36f764ebd82e8",
+    "bytes": 46141
+  },
+  {
+    "path": "extension/rotated-catalog.pdf.page-02.png",
+    "sha256": "8945ca9d43337599d9e30240698aa665cecb494eb478f5b3156e8551e989f18b",
+    "bytes": 59257
+  },
+  {
+    "path": "extension/selection.pdf",
+    "sha256": "c95412c6890c3453be51ef060bed0a013e770c1caf4916e102baa126d4fd1eb5",
+    "bytes": 2497
+  },
+  {
+    "path": "extension/selection.pdf.page-01.png",
+    "sha256": "e6a9116f4027b2f8e1d1f28f159d3f0905806fa0be376f54cfa1e34fead49687",
+    "bytes": 39656
+  },
+  {
+    "path": "extension/selection.pdf.page-02.png",
+    "sha256": "57317b748d84239716c68c5494edf612f55fceabc398e9221db924f77bf28b69",
+    "bytes": 45981
+  },
+  {
+    "path": "extension/service-config.txt",
+    "sha256": "6b6d08aaeb7d398eb91a0a491ceee8d327ac3c046258ce4241a565c2ad34bbb4",
+    "bytes": 450
+  },
+  {
+    "path": "extension/tool-data.json",
+    "sha256": "049aeffa9cd89c66cd65b18472f254f989b345dc872b702ddfbced16e20f1b38",
+    "bytes": 246
+  },
+  {
+    "path": "extension/work-order.txt",
+    "sha256": "30cc2ffa959a7aa5272c47160c5fe18d05b662053c15f037972c383628193325",
+    "bytes": 324
+  },
+  {
+    "path": "legacy/context128-preview.txt",
+    "sha256": "a99d50835cc7892761515e165a67f53ee18c60a43ae565c4f70a4dcc8cc48645",
+    "bytes": 2376454
+  },
+  {
+    "path": "legacy/context256-preview.txt",
+    "sha256": "19937aa16e99f78d8a3e81d965c3e10744c6dfb251eaacddfa8b9ab727955afe",
+    "bytes": 2225801
+  },
+  {
+    "path": "legacy/context32-preview.txt",
+    "sha256": "e478e2214c9bbdd48685ab2058145a52d901733b194eb118f893b6c18da8991d",
+    "bytes": 262601
+  },
+  {
+    "path": "legacy/fixtures/backup-manifest.json",
+    "sha256": "406de06607611407b45f1a49fd22add4bac01bd04d615125fd4cf73a09777aa4",
+    "bytes": 684
+  },
+  {
+    "path": "legacy/fixtures/bom.csv",
+    "sha256": "5bf9062f0980bfdee611b4f0e409bb8e9237e69557d02b3013ae72f00fa0c6e8",
+    "bytes": 169
+  },
+  {
+    "path": "legacy/fixtures/cable.csv",
+    "sha256": "19d721368f12de8caef6f1695136d2febc630806db68e380853bcf0ab37427a0",
+    "bytes": 129
+  },
+  {
+    "path": "legacy/fixtures/catalog.html",
+    "sha256": "3617e1966c6a1c4436d5c46117ecf32bfee1a080433a0d6014ce55676234a049",
+    "bytes": 661
+  },
+  {
+    "path": "legacy/fixtures/compose.yaml",
+    "sha256": "d93c2008be858cda3520f1c4d0a08c7d73a2234bf26b30998ae9f4c8aa31598e",
+    "bytes": 234
+  },
+  {
+    "path": "legacy/fixtures/dashboard-input.html",
+    "sha256": "62bf2fa7e274db56388c77d8e576f2ad726b8ff7ceea6ae884fd2bde272374f1",
+    "bytes": 741
+  },
+  {
+    "path": "legacy/fixtures/db.sql",
+    "sha256": "f4d35b847bb09a28327b8df6a52f01f89a7eb5f23b31721cf81d0c3493793692",
+    "bytes": 287
+  },
+  {
+    "path": "legacy/fixtures/eplan.pdf",
+    "sha256": "7e3113b670b823f0e55d653ffcd966004641f494f23cbf55bdf34d062e2fe700",
+    "bytes": 3682
+  },
+  {
+    "path": "legacy/fixtures/eplan.pdf.page-01.png",
+    "sha256": "b9bddc43230f42f6ad92697c2b444a8ec53a9b0d893ee7f3b95d73abc004413a",
+    "bytes": 52847
+  },
+  {
+    "path": "legacy/fixtures/eplan.pdf.page-02.png",
+    "sha256": "f23a2dd875275fe96d1386f54a271c4229d52daa7e164d11f3f2195ec2951066",
+    "bytes": 39365
+  },
+  {
+    "path": "legacy/fixtures/eplan.pdf.page-03.png",
+    "sha256": "485821dd7f5912fe18904574d476bf709f43dad7f903f1cca36a5e26610f0664",
+    "bytes": 26435
+  },
+  {
+    "path": "legacy/fixtures/lab.service",
+    "sha256": "09699d289feb62aa6a3f6fab72d34db203321eb474530e7f5c24a80029307477",
+    "bytes": 83
+  },
+  {
+    "path": "legacy/fixtures/pid.pdf",
+    "sha256": "b21fd6280964c138cd763b228282b08ba3fe4c2c9babc43bb6dc90beb949ebda",
+    "bytes": 2558
+  },
+  {
+    "path": "legacy/fixtures/pid.pdf.page-01.png",
+    "sha256": "a2fbcbb8134e28933d9051381c3d200a814262dac64e3d8d38c38bc9bc8dcd12",
+    "bytes": 54899
+  },
+  {
+    "path": "legacy/fixtures/product-page.html",
+    "sha256": "416aee491e138373fe8261f2c01da745a578a62dc0f862b7b286efcae616ba5d",
+    "bytes": 492
+  },
+  {
+    "path": "legacy/fixtures/revision.csv",
+    "sha256": "0023be55512a6dfd4c864bb643e29e2d08a4c5a89aa65bb9bac78c347749f9ea",
+    "bytes": 167
+  },
+  {
+    "path": "legacy/fixtures/runs.json",
+    "sha256": "7e7129303134b30ebeb53083abcc31d221c60732e002c31c3333d258eeda69d0",
+    "bytes": 353
+  },
+  {
+    "path": "legacy/fixtures/spread.pdf",
+    "sha256": "d7eca0b8a102d910d9aa6a9a606c152e2e8765286bdc6c2441f46d04541a6825",
+    "bytes": 321035
+  },
+  {
+    "path": "legacy/fixtures/spread.pdf.page-01.png",
+    "sha256": "4213b26d3964bea0e123ea0ae8372bac67198548ca5fe201aed16fa235b9814f",
+    "bytes": 118748
+  },
+  {
+    "path": "legacy/fixtures/spread.pdf.page-02.png",
+    "sha256": "27cb5971c7ba6c1d279b7be57ef8b27b10a38326cafd3b331a4ccf75de796e49",
+    "bytes": 102393
+  },
+  {
+    "path": "legacy/fixtures/spread.pdf.page-03.png",
+    "sha256": "5925b6c7b39fb4286485c4867a2503643ce1032965b5c3a769bd816dbd677279",
+    "bytes": 117161
+  },
+  {
+    "path": "legacy/fixtures/spread.pdf.page-04.png",
+    "sha256": "ab2ca7c39415b59303976b9d6d5242c53a23fcead002dcad4b737177df958df2",
+    "bytes": 102984
+  },
+  {
+    "path": "legacy/fixtures/tool-catalog.json",
+    "sha256": "9051866a84d0e95f1d0e53f3c8c34cac44a31429e93cd66924e7a364ba70424b",
+    "bytes": 190
+  },
+  {
+    "path": "legacy/fixtures/untrusted-document.txt",
+    "sha256": "e68775976fd732796e522e63f98b8dc4ab383b3f076b67a4b30bb87874ad55af",
+    "bytes": 291
+  },
+  {
+    "path": "portable/contactor-catalog.pdf",
+    "sha256": "28104919d07dd784099213fe3a7817ecf2140ae87b31877bf75a0bf8677208b6",
+    "bytes": 3700
+  },
+  {
+    "path": "portable/contactor-catalog.pdf.page-01.png",
+    "sha256": "86643b5745ffc7cb04526d611a2da0bf8970e662229983442bd5f206e6a73184",
+    "bytes": 42587
+  },
+  {
+    "path": "portable/contactor-catalog.pdf.page-02.png",
+    "sha256": "7320c4cd4813ca0f9a4a7db93e0a5d9694d94580f54552d8d8b36b14f9bc567c",
+    "bytes": 41435
+  },
+  {
+    "path": "portable/contactor-catalog.pdf.page-03.png",
+    "sha256": "fe3656bcb2839e2dcb987a653a4283b000b2ee6afcedbdbf6f7f9d2cacb9a355",
+    "bytes": 36106
+  },
+  {
+    "path": "portable/contactor-catalog.pdf.page-04.png",
+    "sha256": "4393a6929d103850cc13b1a2dcf9f51e47d69e5228f833a886e3f49ac161a4f7",
+    "bytes": 44175
+  },
+  {
+    "path": "portable/drive-schematic.pdf",
+    "sha256": "8d4ab51f3315b0f54897cfb38a4abc9f8b1a4694782b1e55b412825cd1157989",
+    "bytes": 2550
+  },
+  {
+    "path": "portable/drive-schematic.pdf.page-01.png",
+    "sha256": "e20b111aa09a1df65c164a893727e71613a4a95a12f8c1959231f2e96ea05b37",
+    "bytes": 49290
+  },
+  {
+    "path": "portable/drive-schematic.pdf.page-02.png",
+    "sha256": "f6a878bcade9b7c0947103ea61675d104a8ae06d2e9a694c543ff248b9d366a4",
+    "bytes": 50977
+  },
+  {
+    "path": "portable/motor-catalog.pdf",
+    "sha256": "e9ae4e475bbd45dbb3ce824ef51de3cb1e4d3fd2250d1847ae60e81e72a27d77",
+    "bytes": 2402
+  },
+  {
+    "path": "portable/motor-catalog.pdf.page-01.png",
+    "sha256": "267c77d4fe6df9024c6fba98698ba55d18ceef41403ec4da56c60191214a68e2",
+    "bytes": 42223
+  },
+  {
+    "path": "portable/motor-catalog.pdf.page-02.png",
+    "sha256": "f77adc66a652c0764f0b8c580de8b87151d253ff4032f96d83fe9418d995cb8e",
+    "bytes": 38621
+  },
+  {
+    "path": "portable/pages.json",
+    "sha256": "87f934455398cf299263e8f91f1d8166c1552bda07200240256474d4c5ae408e",
+    "bytes": 429
+  }
+]

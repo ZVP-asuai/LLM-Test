@@ -1,0 +1,2 @@
+[Service]
+ExecStart=/opt/lab/server --port 8682 --model /mnt/models-store/lab.gguf

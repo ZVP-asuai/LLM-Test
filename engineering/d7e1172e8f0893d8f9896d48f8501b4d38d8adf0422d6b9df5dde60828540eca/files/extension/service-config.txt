@@ -1,0 +1,18 @@
+[base /etc/systemd/system/lab.service]
+[Service]
+ExecStart=/opt/lab/server --port 8080 --model /models/a.gguf
+Environment=CTX=32768
+Restart=on-failure
+MemoryMax=12G
+
+[10-env.conf]
+[Service]
+Environment=CTX=65536
+MemoryMax=10G
+
+[20-port.conf]
+[Service]
+ExecStart=/opt/lab/server --port 8081 --model /models/a.gguf
+Restart=always
+
+Rule: non-oneshot service may have only one ExecStart; empty assignment resets list. Desired port 8081, model unchanged.

@@ -1,0 +1,1 @@
+[{"model": "Alpha", "quant": "Q4", "score": 84, "seconds": 601, "status": "validated"}, {"model": "Alpha", "quant": "Q8", "score": 91, "seconds": 812, "status": "validated"}, {"model": "Beta", "quant": "Q4", "score": null, "seconds": null, "status": "incomplete"}, {"model": "Gamma", "quant": "Q6", "score": 88, "seconds": 699, "status": "exploratory"}]

@@ -1,0 +1,7 @@
+cable,core,from,to,color
+W1,1,X1:1,X2:1,BN
+W1,2,X1:2,X2:2,BU
+W1,3,X1:3,X2:2,BK
+W1,4,X1:4,,WH
+W2,1,X1:5,X3:1,BN
+W2,1,X1:6,X3:2,BK

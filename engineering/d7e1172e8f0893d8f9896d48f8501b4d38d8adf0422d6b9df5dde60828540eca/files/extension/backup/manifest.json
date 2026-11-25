@@ -1,0 +1,14 @@
+[
+  {
+    "path": "a.txt",
+    "sha256": "4c09e1eb0380f5b82ec2b56bbd66764c1273fe594ba150981f2de020ab802c70"
+  },
+  {
+    "path": "b.txt",
+    "sha256": "516ad7b388b21e05e8c56229f063d112e70a2fea45fdd357e8ff44e6a5bce689"
+  },
+  {
+    "path": "c.txt",
+    "sha256": "54a1e3f543b270f9ceca7a1f0262c18472620be2426cb5d416d1fa01df49c6a0"
+  }
+]
