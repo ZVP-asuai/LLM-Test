@@ -1,7 +1,7 @@
 {
   "suite_version": "2.0-review",
   "status": "review_not_qualified",
-  "full_prompts": "Отдельный подготовленный комплект CEB-2.0-agent; полный манифест пока не синхронизирован с публичным GitHub.",
+  "full_prompts": "../tasks.json",
   "standard_count": 44,
   "qualification_count": 6,
   "standard_limit_seconds": 7200,
@@ -458,5 +458,7 @@
       "search_policy": "offline_local_tools_only",
       "depends_on": []
     }
-  ]
+  ],
+  "canonical_manifest": "docs/ceb/tasks.json",
+  "note": "Индекс для совместимости. Обе страницы читают канонический манифест."
 }
