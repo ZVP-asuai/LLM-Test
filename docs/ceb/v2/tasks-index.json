@@ -1,0 +1,462 @@
+{
+  "suite_version": "2.0-review",
+  "status": "review_not_qualified",
+  "full_prompts": "Отдельный подготовленный комплект CEB-2.0-agent; полный манифест пока не синхронизирован с публичным GitHub.",
+  "standard_count": 44,
+  "qualification_count": 6,
+  "standard_limit_seconds": 7200,
+  "tasks": [
+    {
+      "number": 1,
+      "id": "engineering",
+      "title": "Инженерные расчёты",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 2,
+      "id": "pdf_abb",
+      "title": "ABB: многостраничные таблицы",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 3,
+      "id": "pdf_spread",
+      "title": "XR: скан без повторения артикулов",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 4,
+      "id": "pdf_real_spread",
+      "title": "Leroy-Somer: реальный разворот",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 5,
+      "id": "vfd",
+      "title": "Schneider ATV320: схема",
+      "profile": "standard",
+      "weight": 3,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 6,
+      "id": "eplan",
+      "title": "EPLAN: трассировка цепи",
+      "profile": "standard",
+      "weight": 3,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 7,
+      "id": "plc",
+      "title": "PLC: рабочий/резервный насос",
+      "profile": "standard",
+      "weight": 3,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 8,
+      "id": "pid",
+      "title": "P&ID: процесс и блокировка",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 9,
+      "id": "devops",
+      "title": "DevOps: конфигурация и OOM",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 10,
+      "id": "cad",
+      "title": "Цветной STEP контактора",
+      "profile": "standard",
+      "weight": 6,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 11,
+      "id": "cad_connections",
+      "title": "EPLAN: точки и электрические функции контактора",
+      "profile": "standard",
+      "weight": 4,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": [
+        "cad"
+      ]
+    },
+    {
+      "number": 12,
+      "id": "tools",
+      "title": "Поиск и Function Calling",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 13,
+      "id": "context32",
+      "title": "Контекст 32K",
+      "profile": "standard",
+      "weight": 3,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 14,
+      "id": "motor_current",
+      "title": "Трёхфазный двигатель: ток и мощность",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 15,
+      "id": "pt100",
+      "title": "Pt100: двухпроводная погрешность",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 16,
+      "id": "analog_counts",
+      "title": "Аналоговый вход: отсчёты и авария",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 17,
+      "id": "uncertainty",
+      "title": "Измерительный канал: бюджет погрешности",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 18,
+      "id": "tank",
+      "title": "Гидростатика и объём",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 19,
+      "id": "cabinet_heat",
+      "title": "Тепло шкафа: вентиляция",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 20,
+      "id": "ups",
+      "title": "Резервное питание DC",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 21,
+      "id": "motor_selection",
+      "title": "Выбор частотника с дерейтингом",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 22,
+      "id": "valve_kv",
+      "title": "Клапан: расчёт Kv",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 23,
+      "id": "io_capacity",
+      "title": "Модули ввода-вывода и резерв",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 24,
+      "id": "loop_barrier",
+      "title": "Искробезопасная петля: проверка параметров",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 25,
+      "id": "plc_timers",
+      "title": "PLC: задержка пуска и авария",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 26,
+      "id": "plc_interlock",
+      "title": "PLC: реверсивный привод",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 27,
+      "id": "alarm_matrix",
+      "title": "P&ID: матрица причин и следствий",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 28,
+      "id": "revision_audit",
+      "title": "Документация: конфликт редакций",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 29,
+      "id": "bom_audit",
+      "title": "Спецификация: дубликаты и количества",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 30,
+      "id": "cable_audit",
+      "title": "Кабельный журнал: проверка связей",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 31,
+      "id": "html_rowspan",
+      "title": "HTML: многоуровневые заголовки и rowspan",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 32,
+      "id": "html_dashboard_read",
+      "title": "HTML: скрытые строки и статус измерений",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 33,
+      "id": "html_selection",
+      "title": "HTML: карточка привода с примечаниями",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 34,
+      "id": "html_build",
+      "title": "HTML: интерактивный сравнительный отчёт",
+      "profile": "standard",
+      "weight": 3,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 35,
+      "id": "sql_runs",
+      "title": "SQL: агрегирование валидированных прогонов",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 36,
+      "id": "docker_ports",
+      "title": "Docker Compose: несовпадение портов",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 37,
+      "id": "linux_permissions",
+      "title": "Linux: права и принцип минимальных полномочий",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 38,
+      "id": "gpu_kv",
+      "title": "GPU: размер KV-cache",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 39,
+      "id": "llm_metrics",
+      "title": "LLM: TTFT, скорость и энергия",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 40,
+      "id": "network_subnet",
+      "title": "Сеть: подсеть и маршрутизация",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 41,
+      "id": "backup_integrity",
+      "title": "Резервные копии: контроль целостности",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 42,
+      "id": "tool_schema",
+      "title": "Function Calling: строгая схема аргументов",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 43,
+      "id": "prompt_injection",
+      "title": "Достоверность: инструкция внутри документа",
+      "profile": "standard",
+      "weight": 2,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 44,
+      "id": "context128",
+      "title": "Длинный контекст 128K: несколько связанных записей",
+      "profile": "standard",
+      "weight": 3,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 45,
+      "id": "context256",
+      "title": "Полный контекст 256K",
+      "profile": "qualification",
+      "weight": 0,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 46,
+      "id": "office",
+      "title": "Word, Excel, PDF",
+      "profile": "qualification",
+      "weight": 0,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 47,
+      "id": "standards",
+      "title": "ГОСТ, ПУЭ, IEC",
+      "profile": "qualification",
+      "weight": 0,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 48,
+      "id": "live_search",
+      "title": "Реальный интернет-поиск",
+      "profile": "qualification",
+      "weight": 0,
+      "search_policy": "official_web_only",
+      "depends_on": []
+    },
+    {
+      "number": 49,
+      "id": "eplan_api",
+      "title": "EPLAN API и C#",
+      "profile": "qualification",
+      "weight": 0,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    },
+    {
+      "number": 50,
+      "id": "protocols",
+      "title": "Промышленные протоколы",
+      "profile": "qualification",
+      "weight": 0,
+      "search_policy": "offline_local_tools_only",
+      "depends_on": []
+    }
+  ]
+}
