@@ -27,6 +27,29 @@ pdf('selection.pdf',[['Module          Voltage        Continuous A @40C       Pe
 pdf('revisions.pdf',[['REV R2 / APPROVED','Tag        Range        Unit        Signal','PT-41     0..10         bar          4-20 mA','FT-42     0..50         m3/h        4-20 mA','LS-43     ON/OFF     -             NC'],['REV R3 / DRAFT','Tag        Range        Unit        Signal','PT-41     0..16         bar          4-20 mA','FT-42     0..50         l/min        0-10 V','LS-43     ON/OFF     -             NO']])
 pdf('crossrefs.pdf',[['Index / source field signals','PT-41 -> cable W41 core 2 -> sheet 2','LS-42 -> cable W42 core 1 -> sheet 2'],['Terminal plan','W41:2 -> X3:7 -> net N411 -> sheet 3','W42:1 -> X3:8 -> net N422 -> sheet 3'],['PLC channel map','N411 -> A5 AI2 -> IW68','N423 -> A6 DI1 -> I2.1','Note: N422 not present on this sheet.']])
 pdf('bom-scan.pdf',[['Article     Unit     Quantity    Price RUB     Type','B-172       pcs            3                 650            ITEM','R-044       pcs            2                 820            ITEM','B-172       pcs            3                 650            REF'],['Article     Unit     Quantity    Price RUB     Type','B-172       pcs            5                 650            ITEM','C-019       m              12                90             ITEM','R-044       pcs            1                 820            ITEM']],True)
+
+# Independent orthographic input, no solution or STEP included.
+buf=io.BytesIO();c=canvas.Canvas(buf,pagesize=landscape(A4),invariant=1)
+w,h=landscape(A4);c.setFont('Helvetica-Bold',18);c.drawString(42,h-40,'RX-24 | DIN relay | synthetic engineering drawing')
+c.setFont('Helvetica',11);c.drawString(42,h-62,'Dimensions in mm; orthographic views, schematic scale 2.5:1 on page')
+s=2.5;fy=170;fx=100;side=265;topx=590;topy=190
+c.setStrokeColorRGB(.15,.22,.28);c.setLineWidth(1.2)
+c.rect(fx,fy,18*s,90*s);c.setFillColorRGB(.75,.84,.95);c.rect(fx,fy+16*s,18*s,58*s,fill=1,stroke=1);c.setFillColorRGB(.95,.75,.15);c.circle(fx+9*s,fy+62*s,4*s,fill=1);c.setFillColorRGB(.16,.6,.35);c.circle(fx+9*s,fy+48*s,2*s,fill=1)
+c.setFillColorRGB(.1,.15,.2);c.setFont('Helvetica',9);c.drawCentredString(fx+9*s,fy+28*s,'RX-24')
+c.rect(side,fy,75*s,90*s);c.line(side+9*s,fy,side+9*s,fy+90*s);c.rect(side,fy+16*s,9*s,58*s);c.setDash(4,2);c.line(side+69*s,fy+27.5*s,side+75*s,fy+27.5*s);c.line(side+69*s,fy+62.5*s,side+75*s,fy+62.5*s);c.setDash()
+for y in [18,31,44,57]:
+    for z in [0,90]:
+        c.line(side+(y-1.6)*s,fy+z*s,side+(y-1.6)*s,fy+(z+(6 if z==0 else -6))*s)
+        c.line(side+(y+1.6)*s,fy+z*s,side+(y+1.6)*s,fy+(z+(6 if z==0 else -6))*s)
+c.rect(topx,topy,18*s,75*s)
+for y in [18,31,44,57]:c.circle(topx+9*s,topy+y*s,1.6*s)
+c.setFont('Helvetica-Bold',12);c.drawString(fx-2,fy-22,'FRONT');c.drawString(side,fy-22,'RIGHT SIDE');c.drawString(topx-2,topy-22,'TOP')
+c.setFont('Helvetica',11);c.drawString(42,115,'Envelope X18 / Y75 / Z90; front at Y=0. Top and bottom: 4 x diameter 3.2, depth 6.')
+c.drawString(42,94,'Centers X=9; Y=18,31,44,57. Rear DIN groove width 35 in Z, centered at Z=45.')
+c.drawString(42,73,'Gray body, blue/transparent front, black DIN feature, yellow recessed test button, green indicator.')
+c.drawString(42,52,'Synthetic device, no manufacturer or approval claim. Drawing and prompt define acceptance envelope.')
+c.showPage();c.save();(extra/'relay-drawing.pdf').write_bytes(buf.getvalue())
+
 backup=extra/'backup'; actual=backup/'files'
 manifest=[{'path':'a.txt','sha256':sha((actual/'a.txt').read_bytes())},{'path':'b.txt','sha256':sha(b'original content\n')},{'path':'c.txt','sha256':sha(b'not delivered\n')}]
 (backup/'manifest.json').write_text(json.dumps(manifest,indent=2))
