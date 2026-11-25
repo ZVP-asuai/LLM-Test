@@ -23,5 +23,12 @@
     "raw_base": "https://raw.githubusercontent.com/ZVP-asuai/LLM-Test/ceb-inputs/engineering/d7e1172e8f0893d8f9896d48f8501b4d38d8adf0422d6b9df5dde60828540eca/files/"
   },
   "google_drive": null,
-  "yandex_disk": null
+  "yandex_disk": {
+    "url": "https://disk.yandex.ru/d/-5893IB3fNO1vw",
+    "filename": "engineering-inputs.zip",
+    "expected_bytes": 1734045,
+    "verification": "pending",
+    "metadata_api": "https://cloud-api.yandex.net/v1/disk/public/resources",
+    "download_api": "https://cloud-api.yandex.net/v1/disk/public/resources/download"
+  }
 }

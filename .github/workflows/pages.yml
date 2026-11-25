@@ -36,6 +36,8 @@ jobs:
           python -c "import zipfile,pathlib; z=zipfile.ZipFile('docs/ceb/v3/CEB-3.0-inputs.zip'); assert all(z.read(n)==pathlib.Path('docs/ceb/v3',n).read_bytes() for n in ['manifest.json','extension-tasks.json','run-template.json'])"
       - name: Build unified engineering input package
         run: python scripts/ceb-build-engineering.py
+      - name: Verify public Yandex Disk mirror (non-blocking)
+        run: python scripts/ceb-check-yandex.py
       - name: Build resilient launch prompt (fixed archive and embedded tasks)
         run: python scripts/ceb-build-start.py
       - name: Verify active CEB navigation and prompt

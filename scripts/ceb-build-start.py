@@ -15,6 +15,9 @@ for x in d["sources"]: s+=x["kind"]+": "+x["url"]+"\n"
 for k in ("google_drive","yandex_disk"):
     if d[k]: s+=k+": "+d[k]["url"]+"\n"
     else: s+=k+": зеркало пока не подключено.\n"
+if d["yandex_disk"]:
+    y=d["yandex_disk"]
+    s+="Яндекс.Диск: имя файла "+y["filename"]+"; ожидаемый размер "+str(y["expected_bytes"])+" байт; API метаданных "+y["metadata_api"]+"; API скачивания "+y["download_api"]+"\n"
 u=d["unpacked"]; s+="Распакованные файлы: "+u["raw_base"]+"; GitHub: "+u["repository"]+", ветка "+u["branch"]+", папка "+u["path"]+"\n"
 s+=(p/"engineering-start-format.txt").read_text()+"\nПЕРЕЧЕНЬ 100 ЗАДАНИЙ (номер / ID / необходимые файлы; пусто = условие полностью встроено ниже)\n"
 for t in m["tasks"]:

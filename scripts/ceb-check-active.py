@@ -47,3 +47,12 @@ assert sum(not t["input_files"] for t in current["tasks"])==63
 assert all(f'ЗАДАНИЕ {t["number"]:02} — {t["id"]}' in start for t in current["tasks"] if not t["input_files"])
 assert 'engineering-start.txt' in html and 'raw-mirror' in html
 print("CEB resilience: fixed ZIP, independent delivery paths, all 63 self-contained fallback tasks validated.")
+
+assert delivery["yandex_disk"]["url"] in start
+assert delivery["yandex_disk"]["download_api"] in start
+assert delivery["yandex_disk"]["expected_bytes"]==pack.stat().st_size
+yandex_status=json.loads((p/"v3/engineering-yandex-status.json").read_text())
+assert yandex_status["expected_sha256"]==delivery["expected_sha256"] and yandex_status["url"]==delivery["yandex_disk"]["url"]
+if yandex_status["status"]=="verified":
+    assert yandex_status["observed_sha256"]==delivery["expected_sha256"] and yandex_status["bytes"]==pack.stat().st_size
+print("Yandex mirror configured; verification status:",yandex_status["status"])
