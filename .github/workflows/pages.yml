@@ -40,6 +40,8 @@ jobs:
         run: python scripts/ceb-check-yandex.py
       - name: Build resilient launch prompt (fixed archive and embedded tasks)
         run: python scripts/ceb-build-start.py
+      - name: Build offline launch kit (original ZIP unchanged)
+        run: python scripts/ceb-build-offline-start.py
       - name: Test execution ledger and output acceptance
         run: python scripts/ceb-test-runner.py
       - name: Verify active CEB navigation and prompt

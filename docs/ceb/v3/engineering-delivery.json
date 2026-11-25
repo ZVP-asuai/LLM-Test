@@ -30,5 +30,15 @@
     "verification": "pending",
     "metadata_api": "https://cloud-api.yandex.net/v1/disk/public/resources",
     "download_api": "https://cloud-api.yandex.net/v1/disk/public/resources/download"
+  },
+  "github_actions": {
+    "repository": "ZVP-asuai/LLM-Test",
+    "artifact_name": "engineering-inputs.zip",
+    "last_verified_run_id": 45627712985,
+    "last_verified_artifact_id": 15028068741,
+    "expires_at": "2026-12-25T13:51:02Z",
+    "expected_bytes": 1734045,
+    "lookup_url": "https://api.github.com/repos/ZVP-asuai/LLM-Test/actions/artifacts?name=engineering-inputs.zip",
+    "verification": "downloaded_and_sha256_matched"
   }
 }

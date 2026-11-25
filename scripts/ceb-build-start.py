@@ -18,6 +18,7 @@ for k in ("google_drive","yandex_disk"):
 if d["yandex_disk"]:
     y=d["yandex_disk"]
     s+="Яндекс.Диск: имя файла "+y["filename"]+"; ожидаемый размер "+str(y["expected_bytes"])+" байт; API метаданных "+y["metadata_api"]+"; API скачивания "+y["download_api"]+"\n"
+a=d["github_actions"]; s+="GitHub Actions: "+a["lookup_url"]+"; точное имя "+a["artifact_name"]+"; последний проверенный ID "+str(a["last_verified_artifact_id"])+" (срок действия "+a["expires_at"]+"); если истёк, найди новый артефакт с совпадающим digest.\n"
 u=d["unpacked"]; s+="Распакованные файлы: "+u["raw_base"]+"; GitHub: "+u["repository"]+", ветка "+u["branch"]+", папка "+u["path"]+"\n"
 s+=(p/"engineering-start-format.txt").read_text()+"\nПЕРЕЧЕНЬ 100 ЗАДАНИЙ (номер / ID / необходимые файлы; пусто = условие полностью встроено ниже)\n"
 for t in m["tasks"]:
