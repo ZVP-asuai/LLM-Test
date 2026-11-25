@@ -1,0 +1,16 @@
+{
+  "old": {
+    "id": "BR-721",
+    "rev": 1,
+    "state": "obsolete",
+    "device": "BR-72",
+    "current_a": 0.34
+  },
+  "current": {
+    "id": "BR-728",
+    "rev": 4,
+    "state": "approved",
+    "device": "BR-72",
+    "current_a": 0.47
+  }
+}

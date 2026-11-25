@@ -1,0 +1,11 @@
+model,quant,variant,gpu,context,engine,status,quality,decode,wall,ttft
+A,Q4,X,RTX3090,32768,E1,validated,80,65,510,0.8
+A,Q4,X,RTX3090,32768,E1,validated,84,61,530,1.2
+A,Q4,X,RTX3090,32768,E1,validated,82,63,520,0.9
+B,Q6,X,RTX3090,32768,E1,validated,90,44,780,1.5
+B,Q6,X,RTX3090,32768,E1,validated,92,42,800,1.8
+B,Q6,X,RTX3090,32768,E1,validated,91,43,790,1.4
+A,Q4,Y,RTX3090,32768,E1,validated,99,99,99,0.1
+B,Q6,X,RTX4090,32768,E1,validated,99,99,99,0.1
+A,Q4,X,RTX3090,32768,E1,exploratory,98,99,99,0.1
+B,Q6,X,RTX3090,65536,E1,validated,95,30,1200,2.2

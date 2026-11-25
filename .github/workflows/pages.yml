@@ -28,6 +28,7 @@ jobs:
           python -m pip install reportlab==4.4.9 PyMuPDF==1.26.7
           python scripts/ceb-public-inputs.py
           python scripts/ceb-build-portable.py
+          python scripts/ceb-build-v3.py
       - name: Verify preflight negative case
         run: |
           python scripts/ceb-prepare.py --pack docs/ceb/inputs/CEB-offline-inputs.zip --sources /tmp/ceb-empty-sources --output /tmp/ceb-preflight
@@ -46,12 +47,18 @@ jobs:
             git worktree add --detach /tmp/ceb-raw HEAD
             git -C /tmp/ceb-raw switch --orphan ceb-inputs
           fi
-          cp docs/ceb/inputs/CEB-offline-inputs.zip docs/ceb/inputs/portable-sha256.txt /tmp/ceb-raw/
-          git -C /tmp/ceb-raw add CEB-offline-inputs.zip portable-sha256.txt
+          cp docs/ceb/inputs/CEB-offline-inputs.zip docs/ceb/inputs/portable-sha256.txt docs/ceb/v3/CEB-3.0-inputs.zip /tmp/ceb-raw/
+          cp docs/ceb/v3/sha256.txt /tmp/ceb-raw/CEB-3.0-sha256.txt
+          git -C /tmp/ceb-raw add CEB-offline-inputs.zip portable-sha256.txt CEB-3.0-inputs.zip CEB-3.0-sha256.txt
           if ! git -C /tmp/ceb-raw diff --cached --quiet; then
             git -C /tmp/ceb-raw commit -m 'Publish public CEB offline input pack'
             git -C /tmp/ceb-raw push origin HEAD:refs/heads/ceb-inputs
           fi
+      - uses: actions/upload-artifact@v7
+        with:
+          path: docs/ceb/v3/CEB-3.0-inputs.zip
+          archive: false
+          retention-days: 30
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
