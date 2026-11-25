@@ -1,0 +1,61 @@
+{
+  "revision": "delivery-2026-11-25-r3",
+  "note": "Canonical schema for new submissions. Assess historical alternative structures semantically, not by exact strings.",
+  "common": {
+    "evidence": "string[] at task level",
+    "numbers": "finite JSON numbers without units",
+    "artifacts": "actual relative file names; external checker verifies contents"
+  },
+  "tasks": {
+    "cad": {
+      "frame": "X_right_front_Y_front_to_back_Z_up",
+      "units": "mm",
+      "artifacts": [
+        "LC1D09B7.step",
+        "build_cad.py",
+        "cad-front.png",
+        "cad-oblique.png",
+        "cad-rear.png"
+      ]
+    },
+    "cad_connections": {
+      "fields": "units,frame,points,contact_pairs,coil,standard_basis,assumptions",
+      "points": "12 objects: pin,x,y,z,dx,dy,dz,kind,entry_width_mm,entry_depth_mm,approximate",
+      "csv": "pin,x,y,z,dx,dy,dz,kind,entry_width_mm,entry_depth_mm,approximate"
+    },
+    "plc_interlock": {
+      "fields": "outputs,st,safety"
+    },
+    "cable_audit": {
+      "fields": "duplicate_core,duplicate_to,missing_to,invalid_rows",
+      "types": "first three strings; invalid_rows integer array; header row 1"
+    },
+    "html_build": {
+      "fields": "file,rows,validated_leader,leader_score,null_as_dash,external_requests,verification",
+      "note": "Actual browser checks required"
+    },
+    "office": {
+      "fields": "occupied,reserve,required,modules,physical_channels,occupied_total,spare_after_occupied,extra_free,formulas",
+      "note": "extra_free = installed minus required including rounded reserve"
+    },
+    "protocols": {
+      "fields": "request_hex,temp_c,pressure_bar,exception,opc_ua,mqtt"
+    },
+    "vfd": {
+      "page_quick": "array of original PDF page numbers",
+      "page_full": "original PDF page number or null"
+    },
+    "alarm_matrix": {
+      "note": "Verify resulting states and latch actions; do not compare prose literally"
+    },
+    "sql_runs": {
+      "rows": "array of arrays, sorted as required"
+    },
+    "context32": {
+      "note": "archive_key final archive control identifier"
+    },
+    "context256": {
+      "note": "archive_key final archive control identifier"
+    }
+  }
+}

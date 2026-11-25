@@ -1,0 +1,67 @@
+{
+  "cad": {
+    "verified": false,
+    "evidence": null
+  },
+  "function_calling": {
+    "verified": false,
+    "evidence": null
+  },
+  "native_context32": {
+    "verified": false,
+    "evidence": null,
+    "tokenizer_id": null,
+    "configured_context": null,
+    "input_tokens": null,
+    "reserve_tokens": null,
+    "direct_injection": false,
+    "truncation": null,
+    "input_sha256": null
+  },
+  "browser_offline": {
+    "verified": false,
+    "evidence": null
+  },
+  "sqlite": {
+    "verified": false,
+    "evidence": null
+  },
+  "native_context128": {
+    "verified": false,
+    "evidence": null,
+    "tokenizer_id": null,
+    "configured_context": null,
+    "input_tokens": null,
+    "reserve_tokens": null,
+    "direct_injection": false,
+    "truncation": null,
+    "input_sha256": null
+  },
+  "native_context256": {
+    "verified": false,
+    "evidence": null,
+    "tokenizer_id": null,
+    "configured_context": null,
+    "input_tokens": null,
+    "reserve_tokens": null,
+    "direct_injection": false,
+    "truncation": null,
+    "input_sha256": null
+  },
+  "office_files": {
+    "verified": false,
+    "evidence": null
+  },
+  "web_official": {
+    "verified": false,
+    "evidence": null
+  },
+  "eplan_sdk_2025": {
+    "verified": false,
+    "evidence": null
+  },
+  "csharp_compiler": {
+    "verified": false,
+    "evidence": null
+  }
+}

@@ -1,0 +1,729 @@
+{
+  "revision": "delivery-2026-11-25-r3",
+  "suite_version": "2.0-review",
+  "manifest_blob_sha": "f074e90e50a6aa4d5deb54de49fa8a333adf099f",
+  "source_documents": {
+    "abb_af.pdf": {
+      "pages": [
+        1,
+        6,
+        7,
+        8
+      ],
+      "edition": "1SBC101439D0201",
+      "tasks": [
+        "pdf_abb"
+      ]
+    },
+    "dyneo.pdf": {
+      "pages": [
+        36,
+        37
+      ],
+      "edition": "5729 en 2020.03/a",
+      "tasks": [
+        "pdf_real_spread"
+      ]
+    },
+    "atv_quick.pdf": {
+      "pages": [
+        2,
+        3
+      ],
+      "edition": "NVE21763_04 (01/2020)",
+      "tasks": [
+        "vfd"
+      ]
+    },
+    "atv_manual.pdf": {
+      "pages": [
+        116
+      ],
+      "edition": "NVE41289.09 (04/2025)",
+      "tasks": [
+        "vfd"
+      ]
+    },
+    "contactor.pdf": {
+      "pages": [
+        1
+      ],
+      "edition": "LC1D09B7 sales drawing",
+      "tasks": [
+        "cad"
+      ]
+    },
+    "contactor_datasheet.pdf": {
+      "pages": [
+        1,
+        6,
+        7,
+        8,
+        9
+      ],
+      "edition": "LC1D09B7 datasheet 16.09.2024",
+      "tasks": [
+        "cad",
+        "cad_connections"
+      ]
+    }
+  },
+  "private_documents": {
+    "gost-pe.pdf": {
+      "edition": "ГОСТ Р 50571.5.54-2024",
+      "url": "https://protect.gost.ru/gost/details/45fc74f0-6fce-4163-8982-f2a89c8d1792",
+      "tasks": [
+        "standards"
+      ]
+    },
+    "pue-1.7.pdf": {
+      "edition": "ПУЭ 7, глава 1.7",
+      "tasks": [
+        "standards"
+      ]
+    },
+    "iec-pe.pdf": {
+      "edition": "IEC 60364-5-54:2011+AMD1:2021",
+      "url": "https://webstore.iec.ch/en/publication/68865",
+      "tasks": [
+        "standards"
+      ]
+    },
+    "gost-contactor.pdf": {
+      "edition": "ГОСТ IEC 60947-4-1-2021",
+      "tasks": [
+        "cad_connections"
+      ]
+    },
+    "iec-contactor.pdf": {
+      "edition": "IEC 60947-4-1; редакция согласуется владельцем",
+      "tasks": [
+        "cad_connections"
+      ]
+    },
+    "iec-auxiliary.pdf": {
+      "edition": "IEC 60947-5-1; редакция согласуется владельцем",
+      "tasks": [
+        "cad_connections"
+      ]
+    },
+    "eplan-api-2025.pdf": {
+      "edition": "EPLAN Platform API 2025",
+      "url": "https://www.eplan.help/en-US/Infoportal/Content/api/2025/",
+      "tasks": [
+        "eplan_api"
+      ]
+    }
+  },
+  "tasks": {
+    "engineering": {
+      "number": 1,
+      "profile": "standard",
+      "files": [],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "pdf_abb": {
+      "number": 2,
+      "profile": "standard",
+      "files": [],
+      "documents": [
+        "abb_af.pdf"
+      ],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "pdf_spread": {
+      "number": 3,
+      "profile": "standard",
+      "files": [
+        "spread.pdf"
+      ],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "pdf_real_spread": {
+      "number": 4,
+      "profile": "standard",
+      "files": [],
+      "documents": [
+        "dyneo.pdf"
+      ],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "vfd": {
+      "number": 5,
+      "profile": "standard",
+      "files": [],
+      "documents": [
+        "atv_quick.pdf",
+        "atv_manual.pdf"
+      ],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "eplan": {
+      "number": 6,
+      "profile": "standard",
+      "files": [
+        "eplan.pdf"
+      ],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "plc": {
+      "number": 7,
+      "profile": "standard",
+      "files": [],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "pid": {
+      "number": 8,
+      "profile": "standard",
+      "files": [
+        "pid.pdf"
+      ],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "devops": {
+      "number": 9,
+      "profile": "standard",
+      "files": [
+        "lab.service"
+      ],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "cad": {
+      "number": 10,
+      "profile": "standard",
+      "files": [],
+      "documents": [
+        "contactor.pdf",
+        "contactor_datasheet.pdf"
+      ],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [
+        "cad"
+      ],
+      "artifacts": [
+        "LC1D09B7.step",
+        "build_cad.py",
+        "cad-front.png",
+        "cad-oblique.png",
+        "cad-rear.png"
+      ]
+    },
+    "cad_connections": {
+      "number": 11,
+      "profile": "standard",
+      "files": [],
+      "documents": [
+        "contactor_datasheet.pdf"
+      ],
+      "private_documents": [
+        "gost-contactor.pdf",
+        "iec-contactor.pdf",
+        "iec-auxiliary.pdf"
+      ],
+      "depends_on": [
+        "cad"
+      ],
+      "runtime": [
+        "cad"
+      ],
+      "artifacts": [
+        "connection-points.csv",
+        "terminal-functions.csv"
+      ]
+    },
+    "tools": {
+      "number": 12,
+      "profile": "standard",
+      "files": [
+        "tool service"
+      ],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [
+        "function_calling"
+      ],
+      "artifacts": []
+    },
+    "context32": {
+      "number": 13,
+      "profile": "standard",
+      "files": [
+        "context32-preview.txt"
+      ],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [
+        "native_context32"
+      ],
+      "artifacts": []
+    },
+    "motor_current": {
+      "number": 14,
+      "profile": "standard",
+      "files": [],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "pt100": {
+      "number": 15,
+      "profile": "standard",
+      "files": [],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "analog_counts": {
+      "number": 16,
+      "profile": "standard",
+      "files": [],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "uncertainty": {
+      "number": 17,
+      "profile": "standard",
+      "files": [],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "tank": {
+      "number": 18,
+      "profile": "standard",
+      "files": [],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "cabinet_heat": {
+      "number": 19,
+      "profile": "standard",
+      "files": [],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "ups": {
+      "number": 20,
+      "profile": "standard",
+      "files": [],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "motor_selection": {
+      "number": 21,
+      "profile": "standard",
+      "files": [],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "valve_kv": {
+      "number": 22,
+      "profile": "standard",
+      "files": [],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "io_capacity": {
+      "number": 23,
+      "profile": "standard",
+      "files": [],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "loop_barrier": {
+      "number": 24,
+      "profile": "standard",
+      "files": [],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "plc_timers": {
+      "number": 25,
+      "profile": "standard",
+      "files": [],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "plc_interlock": {
+      "number": 26,
+      "profile": "standard",
+      "files": [],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "alarm_matrix": {
+      "number": 27,
+      "profile": "standard",
+      "files": [],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "revision_audit": {
+      "number": 28,
+      "profile": "standard",
+      "files": [
+        "revision.csv"
+      ],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "bom_audit": {
+      "number": 29,
+      "profile": "standard",
+      "files": [
+        "bom.csv"
+      ],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "cable_audit": {
+      "number": 30,
+      "profile": "standard",
+      "files": [
+        "cable.csv"
+      ],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "html_rowspan": {
+      "number": 31,
+      "profile": "standard",
+      "files": [
+        "catalog.html"
+      ],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "html_dashboard_read": {
+      "number": 32,
+      "profile": "standard",
+      "files": [
+        "dashboard-input.html"
+      ],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "html_selection": {
+      "number": 33,
+      "profile": "standard",
+      "files": [
+        "product-page.html"
+      ],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "html_build": {
+      "number": 34,
+      "profile": "standard",
+      "files": [
+        "runs.json"
+      ],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [
+        "browser_offline"
+      ],
+      "artifacts": [
+        "comparison.html"
+      ]
+    },
+    "sql_runs": {
+      "number": 35,
+      "profile": "standard",
+      "files": [
+        "db.sql"
+      ],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [
+        "sqlite"
+      ],
+      "artifacts": []
+    },
+    "docker_ports": {
+      "number": 36,
+      "profile": "standard",
+      "files": [
+        "compose.yaml"
+      ],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "linux_permissions": {
+      "number": 37,
+      "profile": "standard",
+      "files": [],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "gpu_kv": {
+      "number": 38,
+      "profile": "standard",
+      "files": [],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "llm_metrics": {
+      "number": 39,
+      "profile": "standard",
+      "files": [],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "network_subnet": {
+      "number": 40,
+      "profile": "standard",
+      "files": [],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "backup_integrity": {
+      "number": 41,
+      "profile": "standard",
+      "files": [
+        "backup-manifest.json"
+      ],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "tool_schema": {
+      "number": 42,
+      "profile": "standard",
+      "files": [],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "prompt_injection": {
+      "number": 43,
+      "profile": "standard",
+      "files": [
+        "untrusted-document.txt"
+      ],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "context128": {
+      "number": 44,
+      "profile": "standard",
+      "files": [
+        "context128-preview.txt"
+      ],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [
+        "native_context128"
+      ],
+      "artifacts": []
+    },
+    "context256": {
+      "number": 45,
+      "profile": "qualification",
+      "files": [
+        "context256-preview.txt"
+      ],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [
+        "native_context256"
+      ],
+      "artifacts": []
+    },
+    "office": {
+      "number": 46,
+      "profile": "qualification",
+      "files": [],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [
+        "office_files"
+      ],
+      "artifacts": [
+        "signals.xlsx",
+        "report.docx",
+        "report.pdf"
+      ]
+    },
+    "standards": {
+      "number": 47,
+      "profile": "qualification",
+      "files": [],
+      "documents": [],
+      "private_documents": [
+        "gost-pe.pdf",
+        "pue-1.7.pdf",
+        "iec-pe.pdf"
+      ],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    },
+    "live_search": {
+      "number": 48,
+      "profile": "qualification",
+      "files": [],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [
+        "web_official"
+      ],
+      "artifacts": []
+    },
+    "eplan_api": {
+      "number": 49,
+      "profile": "qualification",
+      "files": [],
+      "documents": [],
+      "private_documents": [
+        "eplan-api-2025.pdf"
+      ],
+      "depends_on": [],
+      "runtime": [
+        "eplan_sdk_2025",
+        "csharp_compiler"
+      ],
+      "artifacts": [
+        "*.cs"
+      ]
+    },
+    "protocols": {
+      "number": 50,
+      "profile": "qualification",
+      "files": [],
+      "documents": [],
+      "private_documents": [],
+      "depends_on": [],
+      "runtime": [],
+      "artifacts": []
+    }
+  },
+  "context_policy": {
+    "context32": 32768,
+    "context128": 131072,
+    "context256": 262144
+  },
+  "status": "review",
+  "policy": "Owner prepares, verifies and locks inputs before starting any model. Missing environment is not a scored model failure. Source edition and original PDF page must be verified by owner."
+}

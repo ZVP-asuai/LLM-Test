@@ -106,19 +106,16 @@
       "kind": "external_source",
       "path": "sources/atv_manual.pdf",
       "url": "https://download.se.com/files?p_Doc_Ref=NVE41289&p_File_Name=ATV320_Installation_manual_EN_NVE41289_09.pdf&p_enDocType=User+guide",
-      "mirrors": [
-        "https://ita-sacchi.mo.cloudinary.net/PRODUCT/DOCUMENT/hlr-system/SCHNEIDER/MD14_BMECAT_20250623/TEATV320U07N4C.pdf?ts=1751087297244"
-      ],
+      "mirrors": [],
       "landing": "https://www.se.com/ca/en/download/document/NVE41289/",
-      "source_locked": false
+      "source_locked": false,
+      "note": "403 CT128; web PDF size limit; extract original page 116 before testing."
     },
     "atv_quick.pdf": {
       "kind": "external_source",
       "path": "sources/atv_quick.pdf",
       "url": "https://download.se.com/files?p_Doc_Ref=NVE21763&p_File_Name=ATV320_Getting_Started_EN_NVE21763_04.pdf&p_enDocType=Instruction+sheet",
-      "mirrors": [
-        "https://manuals.plus/m/4f1b0fa7332e8eea69860ca085052d8b8bb7e3fb7e9154e27a0113158b526e1d.pdf"
-      ],
+      "mirrors": [],
       "landing": "https://www.se.com/us/en/download/document/NVE21763/",
       "source_locked": false
     },
@@ -127,7 +124,6 @@
       "path": "sources/contactor.pdf",
       "url": "https://download.se.com/files?p_File_Name=LC1D09B7_2D+Sales+Drawing.pdf&p_enDocType=CAD",
       "mirrors": [
-        "https://docs.rs-online.com/e3c0/A700000008961279.pdf",
         "https://images.tuotetieto.fi/1739426_DocDimension_Drawing_A1886176.pdf"
       ],
       "landing": "https://www.se.com/my/en/product/LC1D09B7/",
@@ -321,5 +317,11 @@
     "standards": "Не выдумывайте пункты нормативов; неподтверждённые ссылки не считаются доказательством.",
     "eplan_api": "Без реального SDK отделяйте исходник/проектное решение от фактически проверенного исполнения: partial."
   },
-  "clarification_policy": "Определения полей и правила частичного исполнения; исходные числовые данные и критерии не меняются."
+  "clarification_policy": "Определения полей и правила частичного исполнения; исходные числовые данные и критерии не меняются.",
+  "delivery_revision": "delivery-2026-11-25-r3",
+  "delivery_contract": "https://raw.githubusercontent.com/ZVP-asuai/LLM-Test/main/docs/ceb/inputs/delivery-contract.json",
+  "package_urls": [
+    "https://zvp-asuai.github.io/LLM-Test/ceb/inputs/CEB-offline-inputs.zip",
+    "https://raw.githubusercontent.com/ZVP-asuai/LLM-Test/ceb-inputs/CEB-offline-inputs.zip"
+  ]
 }

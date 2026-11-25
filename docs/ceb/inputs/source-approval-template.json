@@ -1,0 +1,67 @@
+{
+  "abb_af.pdf": {
+    "edition": "1SBC101439D0201",
+    "sha256": null,
+    "reviewed": false
+  },
+  "dyneo.pdf": {
+    "edition": "5729 en 2020.03/a",
+    "sha256": null,
+    "reviewed": false
+  },
+  "atv_quick.pdf": {
+    "edition": "NVE21763_04 (01/2020)",
+    "sha256": null,
+    "reviewed": false
+  },
+  "atv_manual.pdf": {
+    "edition": "NVE41289.09 (04/2025)",
+    "sha256": null,
+    "reviewed": false
+  },
+  "contactor.pdf": {
+    "edition": "LC1D09B7 sales drawing",
+    "sha256": null,
+    "reviewed": false
+  },
+  "contactor_datasheet.pdf": {
+    "edition": "LC1D09B7 datasheet 16.09.2024",
+    "sha256": null,
+    "reviewed": false
+  },
+  "gost-pe.pdf": {
+    "edition": "ГОСТ Р 50571.5.54-2024",
+    "sha256": null,
+    "reviewed": false
+  },
+  "pue-1.7.pdf": {
+    "edition": "ПУЭ 7, глава 1.7",
+    "sha256": null,
+    "reviewed": false
+  },
+  "iec-pe.pdf": {
+    "edition": "IEC 60364-5-54:2011+AMD1:2021",
+    "sha256": null,
+    "reviewed": false
+  },
+  "gost-contactor.pdf": {
+    "edition": "ГОСТ IEC 60947-4-1-2021",
+    "sha256": null,
+    "reviewed": false
+  },
+  "iec-contactor.pdf": {
+    "edition": "IEC 60947-4-1; редакция согласуется владельцем",
+    "sha256": null,
+    "reviewed": false
+  },
+  "iec-auxiliary.pdf": {
+    "edition": "IEC 60947-5-1; редакция согласуется владельцем",
+    "sha256": null,
+    "reviewed": false
+  },
+  "eplan-api-2025.pdf": {
+    "edition": "EPLAN Platform API 2025",
+    "sha256": null,
+    "reviewed": false
+  }
+}
