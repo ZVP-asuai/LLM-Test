@@ -12,3 +12,22 @@
 Главный итог — ceb-run.json, точно по submission-template.json, все 50 записей с теми же ID и порядком, без дополнительных полей. run_id уникальный, variant_id по умолчанию ceb-2.0-public-preview; другой вариант только при согласовании. schema_version=2.2, execution_mode=orchestrated, telemetry_source=external_orchestrator, context_isolated/network_isolated=true только если реально обеспечены. started_at/ended_at/total_wall_seconds — только Standard, qualification_wall_seconds — отдельно. Для задач status: completed, partial, failed, timeout, blocked, not_run, unsupported; reason_code из перечня: not_started, missing_input, missing_tool, unsupported_context, dependency_failed, time_limit, runtime_error, invalid_output, policy_block, measurement_unavailable, not_selected, other, missing_artifact, context_unverified, source_unverified, output_limit, missing_sdk, missing_normative; если выполнено без измерения — measurement_unavailable. После лимита оставшиеся задачи not_run/time_limit. Не пропускай строки. status всего прогона submitted только если все 44 основных задания завершены, измерены, входы закреплены и Standard <=7200 с; иначе incomplete либо failed. Не назначай баллы, не ставь validated и не заявляй правильность. Это работа независимого оценщика. Не пытайся самостоятельно коммитить ответы или публиковать результаты. Верни владельцу ceb-run.json для импорта и закрытый комплект ответов/артефактов для проверки. Если у тебя нет внешнего таймера, пиши null, а не вымышленные цифры.
 
 Для partial сохраняй содержательный результат с хешем, указывай причину, но не считай за completed. Не прекращай весь прогон из-за недостающего инструмента; решай остальные задачи. Нативный длинный контекст требует подтверждения фактического числа токенов; чтение preview через инструмент — partial/context_unverified. submitted означает приём формата, не квалификацию, пока эталоны и входы не закрыты.
+
+
+УТОЧНЕНИЯ К ЗАДАНИЯМ (не меняют исходные данные):
+- devops: Если lab.service не скачивается, используйте дословный текст файла, встроенный в задание.
+- cad_connections: Без STEP допускается partial: электрическую часть решайте по доступной документации, геометрические координаты без модели не выдумывайте.
+- tools: Разрешён учебный локальный tool-service.py из ZIP; фактический вызов отличайте от анализа текста каталога. Без выполнения инструмента — partial, не заявляйте о вызове.
+- ups: nominal_wh — требуемая номинальная энергия батареи с учётом КПД, глубины разряда и запаса; required_ah вычисляйте из неё.
+- io_capacity: spare — установленные каналы минус фактически занятые исходные каналы; required уже включает резерв.
+- alarm_matrix: Сохраняйте каждое защёлкнутое действие до разрешённого RESET. LOSS_AIR действует непосредственно, RESET его не отменяет.
+- sql_runs: rows — JSON-массив массивов значений в порядке столбцов SELECT, не массив текстовых представлений.
+- linux_permissions: Под overwrite подразумевается запись в существующий файл, не атомарная замена через rename.
+- context32: Без подтверждённой нативной загрузки и подсчёта токенов результаты анализа файла — только partial/context_unverified.
+- context128: Без подтверждённой нативной загрузки и подсчёта токенов результаты анализа файла — только partial/context_unverified.
+- context256: Используйте context256-preview.txt; без подтверждённого нативного контекста — partial/context_unverified.
+- office: При отсутствии средства создания/проверки файлов решите доступную содержательную часть и пометьте partial.
+- standards: Не выдумывайте пункты нормативов; неподтверждённые ссылки не считаются доказательством.
+- eplan_api: Без реального SDK отделяйте исходник/проектное решение от фактически проверенного исполнения: partial.
+
+Оркестратор передаёт соответствующее уточнение к исходному промпту задачи, фиксируя ревизию каталога входов. Не меняйте исходный промпт.
