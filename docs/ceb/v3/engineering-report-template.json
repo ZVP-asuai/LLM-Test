@@ -1,6 +1,6 @@
 {
   "format": "ceb-engineering-report-1",
-  "dataset_id": "ceb-100-portable-20261125",
+  "dataset_id": "ceb-100-portable-20261125-r2",
   "run_id": null,
   "model": {
     "name": null,
@@ -31,7 +31,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -49,7 +49,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -67,7 +67,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -85,7 +85,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -103,7 +103,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -121,7 +121,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -139,7 +139,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -157,7 +157,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -175,7 +175,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -193,7 +193,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -211,7 +211,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -229,7 +229,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -247,7 +247,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -265,7 +265,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -283,7 +283,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -301,7 +301,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -319,7 +319,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -337,7 +337,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -355,7 +355,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -373,7 +373,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -391,7 +391,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -409,7 +409,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -427,7 +427,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -445,7 +445,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -463,7 +463,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -481,7 +481,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -499,7 +499,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -517,7 +517,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -535,7 +535,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -553,7 +553,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -571,7 +571,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -589,7 +589,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -607,7 +607,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -625,7 +625,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -643,7 +643,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -661,7 +661,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -679,7 +679,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -697,7 +697,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -715,7 +715,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -733,7 +733,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -751,7 +751,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -769,7 +769,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -787,7 +787,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -805,7 +805,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -823,7 +823,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -841,7 +841,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -859,7 +859,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -877,7 +877,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -895,7 +895,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -913,7 +913,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -931,7 +931,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -949,7 +949,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -967,7 +967,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -985,7 +985,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1003,7 +1003,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1021,7 +1021,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1039,7 +1039,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1057,7 +1057,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1075,7 +1075,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1093,7 +1093,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1111,7 +1111,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1129,7 +1129,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1147,7 +1147,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1165,7 +1165,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1183,7 +1183,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1201,7 +1201,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1219,7 +1219,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1237,7 +1237,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1255,7 +1255,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1273,7 +1273,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1291,7 +1291,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1309,7 +1309,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1327,7 +1327,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1345,7 +1345,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1363,7 +1363,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1381,7 +1381,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1399,7 +1399,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1417,7 +1417,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1435,7 +1435,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1453,7 +1453,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1471,7 +1471,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1489,7 +1489,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1507,7 +1507,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1525,7 +1525,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1543,7 +1543,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1561,7 +1561,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1579,7 +1579,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1597,7 +1597,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1615,7 +1615,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1633,7 +1633,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1651,7 +1651,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1669,7 +1669,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1687,7 +1687,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1705,7 +1705,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1723,7 +1723,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1741,7 +1741,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1759,7 +1759,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1777,7 +1777,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1795,7 +1795,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     },
@@ -1813,7 +1813,7 @@
       "issue": {
         "category": "not_run",
         "code": "not_started",
-        "description": "",
+        "description": "Задание ещё не начато.",
         "attempts": []
       }
     }

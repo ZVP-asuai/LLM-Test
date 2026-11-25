@@ -1,0 +1,910 @@
+{
+  "format": "ceb-engineering-assessment-1",
+  "dataset_id": "ceb-100-portable-20261125-r2",
+  "run_id": null,
+  "input_sha256": null,
+  "reviewer": null,
+  "status": "draft",
+  "tasks": [
+    {
+      "number": 1,
+      "id": "engineering",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 2,
+      "id": "pdf_abb",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 3,
+      "id": "pdf_spread",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 4,
+      "id": "pdf_real_spread",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 5,
+      "id": "vfd",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 6,
+      "id": "eplan",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 7,
+      "id": "plc",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 8,
+      "id": "pid",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 9,
+      "id": "devops",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 10,
+      "id": "cad",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 11,
+      "id": "cad_connections",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 12,
+      "id": "tools",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 13,
+      "id": "context32",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 14,
+      "id": "motor_current",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 15,
+      "id": "pt100",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 16,
+      "id": "analog_counts",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 17,
+      "id": "uncertainty",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 18,
+      "id": "tank",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 19,
+      "id": "cabinet_heat",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 20,
+      "id": "ups",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 21,
+      "id": "motor_selection",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 22,
+      "id": "valve_kv",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 23,
+      "id": "io_capacity",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 24,
+      "id": "loop_barrier",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 25,
+      "id": "plc_timers",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 26,
+      "id": "plc_interlock",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 27,
+      "id": "alarm_matrix",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 28,
+      "id": "revision_audit",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 29,
+      "id": "bom_audit",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 30,
+      "id": "cable_audit",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 31,
+      "id": "html_rowspan",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 32,
+      "id": "html_dashboard_read",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 33,
+      "id": "html_selection",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 34,
+      "id": "html_build",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 35,
+      "id": "sql_runs",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 36,
+      "id": "docker_ports",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 37,
+      "id": "linux_permissions",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 38,
+      "id": "gpu_kv",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 39,
+      "id": "llm_metrics",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 40,
+      "id": "network_subnet",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 41,
+      "id": "backup_integrity",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 42,
+      "id": "tool_schema",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 43,
+      "id": "prompt_injection",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 44,
+      "id": "context128",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 45,
+      "id": "context256",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 46,
+      "id": "office",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 47,
+      "id": "standards",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 48,
+      "id": "live_search",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 49,
+      "id": "eplan_api",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 50,
+      "id": "protocols",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 51,
+      "id": "short_circuit",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 52,
+      "id": "transformer_load",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 53,
+      "id": "selectivity_table",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 54,
+      "id": "dc_distribution",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 55,
+      "id": "ai_isolator_budget",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 56,
+      "id": "flow_totalizer",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 57,
+      "id": "level_density",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 58,
+      "id": "energy_cost",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 59,
+      "id": "sensor_vote",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 60,
+      "id": "thermal_derating",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 61,
+      "id": "pdf_rotated",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 62,
+      "id": "pdf_footnote",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 63,
+      "id": "pdf_revision_redline",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 64,
+      "id": "pdf_crossrefs",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 65,
+      "id": "pdf_layout_bom",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 66,
+      "id": "doc_units",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 67,
+      "id": "doc_traceability",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 68,
+      "id": "doc_change_order",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 69,
+      "id": "doc_technical_offer",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 70,
+      "id": "doc_package",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 71,
+      "id": "plc_debounce",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 72,
+      "id": "plc_sequence",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 73,
+      "id": "plc_pid_antiwindup",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 74,
+      "id": "plc_restart",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 75,
+      "id": "plc_alarm_log",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 76,
+      "id": "modbus_tcp",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 77,
+      "id": "modbus_poll",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 78,
+      "id": "opc_quality",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 79,
+      "id": "mqtt_idempotency",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 80,
+      "id": "io_mapping",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 81,
+      "id": "cad_relay",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 82,
+      "id": "cad_relay_pins",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 83,
+      "id": "cad_din_layout",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 84,
+      "id": "cad_hole_drawing",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 85,
+      "id": "eplan_netlist",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 86,
+      "id": "eplan_terminal_plan",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 87,
+      "id": "eplan_cross_section",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 88,
+      "id": "panel_cable_routes",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 89,
+      "id": "cad_clearance",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 90,
+      "id": "eplan_article_xml",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 91,
+      "id": "devops_oom_timeline",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 92,
+      "id": "devops_systemd",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 93,
+      "id": "devops_container_acl",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 94,
+      "id": "devops_backup_restore",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 95,
+      "id": "gpu_context_budget",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 96,
+      "id": "gpu_benchmark_compare",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 97,
+      "id": "agent_tool_retry",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 98,
+      "id": "agent_rag_conflict",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 99,
+      "id": "agent_sandbox",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    },
+    {
+      "number": 100,
+      "id": "agent_end_to_end",
+      "score": null,
+      "verdict": "not_reviewed",
+      "comparisons": [],
+      "cause": null,
+      "comment": ""
+    }
+  ]
+}

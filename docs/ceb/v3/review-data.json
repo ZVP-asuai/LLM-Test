@@ -150,5 +150,193 @@
     "Raw model statuses are not scores. Full-suite score unavailable. Same 198-point denominator for these two runs only.",
     "Owner review, not independent external certification. Reasoning effort absent from raw reports.",
     "Do not mix revisions or add GLM scores without the same rubric and comparable set."
+  ],
+  "diagnostic_notes": [
+    {
+      "number": 2,
+      "model": "Обе модели",
+      "category": "missing_input",
+      "description": "Не доставлен закреплённый каталог контактора."
+    },
+    {
+      "number": 4,
+      "model": "Обе модели",
+      "category": "missing_input",
+      "description": "Не доставлен закреплённый разворот каталога двигателей."
+    },
+    {
+      "number": 5,
+      "model": "Обе модели",
+      "category": "missing_input",
+      "description": "Не доставлены требуемые страницы руководства ПЧ."
+    },
+    {
+      "number": 10,
+      "model": "Обе модели",
+      "category": "missing_input",
+      "description": "Не доставлен чертёж и паспорт контактора."
+    },
+    {
+      "number": 11,
+      "model": "Обе модели",
+      "category": "missing_input",
+      "description": "Нет результата зависимого CAD-задания и части исходной документации."
+    },
+    {
+      "number": 13,
+      "model": "GPT-6.2",
+      "category": "model_error",
+      "description": "Указан промежуточный, а не конечный архивный ключ; нативный контекст также не подтверждён."
+    },
+    {
+      "number": 13,
+      "model": "GPT-6",
+      "category": "environment",
+      "description": "Ответ отсутствует; нативный контекст не подтверждён."
+    },
+    {
+      "number": 44,
+      "model": "GPT-6.2",
+      "category": "environment",
+      "description": "Файловый ответ принят, но нативное окно не подтверждено."
+    },
+    {
+      "number": 44,
+      "model": "GPT-6",
+      "category": "environment",
+      "description": "Ответ отсутствует; нативное окно не подтверждено."
+    },
+    {
+      "number": 45,
+      "model": "GPT-6.2",
+      "category": "model_error",
+      "description": "Указан промежуточный вместо конечного архивного ключа; нативное окно не подтверждено."
+    },
+    {
+      "number": 45,
+      "model": "GPT-6",
+      "category": "environment",
+      "description": "Ответ отсутствует; нативное окно не подтверждено."
+    },
+    {
+      "number": 47,
+      "model": "Обе модели",
+      "category": "missing_input",
+      "description": "Точные редакции нормативов недоступны."
+    },
+    {
+      "number": 48,
+      "model": "Обе модели",
+      "category": "verification",
+      "description": "Не завершена собственная визуальная проверка руководства."
+    },
+    {
+      "number": 49,
+      "model": "Обе модели",
+      "category": "environment",
+      "description": "Не проверены лицензированный SDK и компиляция C#."
+    },
+    {
+      "number": 7,
+      "model": "GPT-6",
+      "category": "model_error",
+      "description": "Логика прошла проверку; использован оператор вне заданного поднабора ST."
+    },
+    {
+      "number": 9,
+      "model": "GPT-6",
+      "category": "model_error",
+      "description": "Наблюдаемый порт подменил целевой, отсутствовал обязательный drop-in."
+    },
+    {
+      "number": 21,
+      "model": "GPT-6",
+      "category": "model_error",
+      "description": "Выбор аппарата верен; вместо допустимых токов аппарата приведены требования двигателя."
+    },
+    {
+      "number": 27,
+      "model": "GPT-6",
+      "category": "model_error",
+      "description": "Не полностью описано снятие защёлок и восстановление состояния клапана."
+    },
+    {
+      "number": 30,
+      "model": "GPT-6",
+      "category": "model_error",
+      "description": "Строки нарушений найдены, но часть требуемых значений не приведена."
+    },
+    {
+      "number": 32,
+      "model": "GPT-6",
+      "category": "model_error",
+      "description": "Не указан один из исключённых источников данных."
+    },
+    {
+      "number": 34,
+      "model": "GPT-6",
+      "category": "verification",
+      "description": "HTML работоспособен, собственная обязательная проверка в браузере отсутствовала."
+    },
+    {
+      "number": 72,
+      "model": "GPT-6",
+      "category": "model_error",
+      "description": "Нет полноценного формирования и сброса таймера фазы."
+    },
+    {
+      "number": 74,
+      "model": "GPT-6",
+      "category": "verification",
+      "description": "Повторная проверка успешна; собственные тесты не покрыли требуемые комбинации."
+    },
+    {
+      "number": 77,
+      "model": "GPT-6",
+      "category": "model_error",
+      "description": "В худшем цикле дважды учтена часть паузы; вердикт правильный."
+    },
+    {
+      "number": 81,
+      "model": "GPT-6",
+      "category": "model_error",
+      "description": "После повторного импорта перекрыт DIN-паз, выявлены объёмные пересечения и недочёты маркировки/цветов."
+    },
+    {
+      "number": 83,
+      "model": "GPT-6",
+      "category": "model_error",
+      "description": "Конфликт найден аналитически, но часть элементов отсутствует или объединена в STEP."
+    },
+    {
+      "number": 84,
+      "model": "GPT-6",
+      "category": "model_error",
+      "description": "Геометрия и масштаб корректны; PDF не содержит координат отверстий."
+    },
+    {
+      "number": 90,
+      "model": "GPT-6",
+      "category": "model_error",
+      "description": "Положительный и отрицательный тест пройдены, но схема недостаточно ограничивает функции и число выводов."
+    },
+    {
+      "number": 96,
+      "model": "GPT-6",
+      "category": "model_error",
+      "description": "Метрики правильные, но не показаны пропуски и индивидуальные причины исключения."
+    },
+    {
+      "number": 100,
+      "model": "GPT-6",
+      "category": "model_error",
+      "description": "Неполная спецификация, отсутствует масштабирование AI и ограничение AO; FAT преимущественно статические."
+    },
+    {
+      "number": 97,
+      "model": "GPT-6.2",
+      "category": "corrected",
+      "description": "Первоначальный ошибочный вызов calculate исправлен; итог верен, штраф не назначался."
+    }
   ]
 }

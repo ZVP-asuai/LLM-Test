@@ -32,3 +32,9 @@ with zipfile.ZipFile(pack) as z:
     assert all(f in z.namelist() or (f.endswith("/") and any(n.startswith(f) for n in z.namelist())) for t in current["tasks"] for f in t["input_files"])
 assert all(f'data-pane="{name}"' in html for name in ["benchmark","comparison","diagnostics"])
 print("Unified CEB catalogue, report and archive validated.")
+
+assessment=json.loads((p/"v3/engineering-assessment-template.json").read_text())
+assert assessment["dataset_id"]==current["dataset_id"] and [(t["number"],t["id"]) for t in assessment["tasks"]]==[(t["number"],t["id"]) for t in current["tasks"]]
+assert all(t["brief"] and t["acceptance"] for t in current["tasks"])
+assert 'id="assessment-import"' in html and 'id="historic-issues"' in html
+print("100 natural-language brief questions and independent assessment template validated.")
