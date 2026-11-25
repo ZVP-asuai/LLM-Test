@@ -1,0 +1,38 @@
+name: "CEB 3.0: импорт сводки"
+on:
+  workflow_dispatch:
+    inputs:
+      run_json:
+        description: "Только ceb-summary-3, без полных ответов и секретов"
+        required: true
+        type: string
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: ceb-import-main
+  cancel-in-progress: false
+jobs:
+  import:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate summary only
+        run: node scripts/ceb-v3-import.cjs
+      - name: Save summary
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/ceb/v3/runs.json
+          git commit -m "CEB 3.0: append exploratory summary"
+          git push origin HEAD:main
+      - name: Publish Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --repo "$GITHUB_REPOSITORY" --ref main
