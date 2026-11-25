@@ -1,0 +1,56 @@
+{
+  "contactor-catalog.pdf": [
+    [
+      "Order table | training document",
+      "K-16Z-22-30 | 2NO+2NC | 0.315 kg | AC-1 30 A",
+      "K-16Z-40-30 | 4NO | 0.322 kg | AC-1 32 A",
+      "K-16Z-22-40 | 2NO+2NC | 0.319 kg | AC-1 30 A"
+    ],
+    [
+      "Coil system | suffix 30: 24..60 V DC | suffix 40: 48..130 V DC",
+      "Suffix 30: pull-in 4.2 W | PLC output minimum at 24 V DC: 185 mA",
+      "Suffix 40: pull-in 5.0 W | PLC output minimum at 48 V DC: 120 mA"
+    ],
+    [
+      "General characteristics | K-16Z: altitude 2000 m without derating",
+      "K-25Z: altitude 1000 m without derating",
+      "Coil data at rated voltage"
+    ],
+    [
+      "Main terminal table | flexible wire with insulated ferrule",
+      "K-16Z-22: one conductor 0.75..6 mm2 | torque 1.4 Nm",
+      "K-16Z-40: one conductor 0.75..4 mm2 | torque 1.2 Nm",
+      "Auxiliary terminals: max 2.5 mm2 | torque 0.7 Nm"
+    ]
+  ],
+  "motor-catalog.pdf": [
+    [
+      "Left page | row ID | model | kW | rpm | connection | rated current A",
+      "A07 | M315MP | 132 | 1800 | 400Y | 231",
+      "B12 | M315MP | 160 | 1500 | 400Y | 279",
+      "C19 | M315MP | 185 | 2600 | 400D | 320"
+    ],
+    [
+      "Right page | row ID | kW | torque Nm | efficiency % | mass B3 kg",
+      "A07 | 132 | 700 | 96.1 | 860",
+      "B12 | 160 | 1019 | 96.4 | 920",
+      "C19 | 180 | 680 | 96.0 | 890"
+    ]
+  ],
+  "drive-schematic.pdf": [
+    [
+      "Training drive terminal map",
+      "Supply: L1 -> R/L1 ; L2 -> S/L2 ; L3 -> T/L3",
+      "Potentiometer: high +10V ; wiper AI1 ; low COM",
+      "Current input AI3 (4..20 mA); bipolar voltage input AI2 (-10..10 V)",
+      "Analog output AO1; forward DI1; reverse DI2"
+    ],
+    [
+      "Control terminal drawing notes",
+      "Switch SW1: SOURCE for this drawing; terminal torque 0.5 Nm",
+      "Potentiometer max 10 kOhm",
+      "STO: prevents torque generation; mains remains connected",
+      "This is a synthetic documentation task, not installation approval."
+    ]
+  ]
+}

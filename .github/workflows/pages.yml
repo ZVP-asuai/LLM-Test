@@ -34,6 +34,8 @@ jobs:
           printf '%s  %s\n' '176bc4336fbcefa15e700df49dffe778202efa0548045dc74dda1f000e16a1db' 'CEB-3.0-inputs.zip' > docs/ceb/v3/sha256.txt
           (cd docs/ceb/v3 && sha256sum -c sha256.txt)
           python -c "import zipfile,pathlib; z=zipfile.ZipFile('docs/ceb/v3/CEB-3.0-inputs.zip'); assert all(z.read(n)==pathlib.Path('docs/ceb/v3',n).read_bytes() for n in ['manifest.json','extension-tasks.json','run-template.json'])"
+      - name: Build unified engineering input package
+        run: python scripts/ceb-build-engineering.py
       - name: Verify active CEB navigation and prompt
         run: python scripts/ceb-check-active.py
       - name: Verify preflight negative case

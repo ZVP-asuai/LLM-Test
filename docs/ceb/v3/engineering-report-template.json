@@ -1,0 +1,1821 @@
+{
+  "format": "ceb-engineering-report-1",
+  "dataset_id": "ceb-100-portable-20261125",
+  "run_id": null,
+  "model": {
+    "name": null,
+    "reasoning_effort": null,
+    "platform": null
+  },
+  "input_sha256": null,
+  "timing": {
+    "source": "none",
+    "delivery_seconds": null,
+    "setup_seconds": null,
+    "solve_seconds": null,
+    "verification_seconds": null,
+    "total_seconds": null
+  },
+  "tasks": [
+    {
+      "number": 1,
+      "id": "engineering",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 2,
+      "id": "pdf_abb",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 3,
+      "id": "pdf_spread",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 4,
+      "id": "pdf_real_spread",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 5,
+      "id": "vfd",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 6,
+      "id": "eplan",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 7,
+      "id": "plc",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 8,
+      "id": "pid",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 9,
+      "id": "devops",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 10,
+      "id": "cad",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 11,
+      "id": "cad_connections",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 12,
+      "id": "tools",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 13,
+      "id": "context32",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 14,
+      "id": "motor_current",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 15,
+      "id": "pt100",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 16,
+      "id": "analog_counts",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 17,
+      "id": "uncertainty",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 18,
+      "id": "tank",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 19,
+      "id": "cabinet_heat",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 20,
+      "id": "ups",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 21,
+      "id": "motor_selection",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 22,
+      "id": "valve_kv",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 23,
+      "id": "io_capacity",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 24,
+      "id": "loop_barrier",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 25,
+      "id": "plc_timers",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 26,
+      "id": "plc_interlock",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 27,
+      "id": "alarm_matrix",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 28,
+      "id": "revision_audit",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 29,
+      "id": "bom_audit",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 30,
+      "id": "cable_audit",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 31,
+      "id": "html_rowspan",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 32,
+      "id": "html_dashboard_read",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 33,
+      "id": "html_selection",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 34,
+      "id": "html_build",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 35,
+      "id": "sql_runs",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 36,
+      "id": "docker_ports",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 37,
+      "id": "linux_permissions",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 38,
+      "id": "gpu_kv",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 39,
+      "id": "llm_metrics",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 40,
+      "id": "network_subnet",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 41,
+      "id": "backup_integrity",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 42,
+      "id": "tool_schema",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 43,
+      "id": "prompt_injection",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 44,
+      "id": "context128",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 45,
+      "id": "context256",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 46,
+      "id": "office",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 47,
+      "id": "standards",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 48,
+      "id": "live_search",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 49,
+      "id": "eplan_api",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 50,
+      "id": "protocols",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 51,
+      "id": "short_circuit",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 52,
+      "id": "transformer_load",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 53,
+      "id": "selectivity_table",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 54,
+      "id": "dc_distribution",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 55,
+      "id": "ai_isolator_budget",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 56,
+      "id": "flow_totalizer",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 57,
+      "id": "level_density",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 58,
+      "id": "energy_cost",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 59,
+      "id": "sensor_vote",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 60,
+      "id": "thermal_derating",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 61,
+      "id": "pdf_rotated",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 62,
+      "id": "pdf_footnote",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 63,
+      "id": "pdf_revision_redline",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 64,
+      "id": "pdf_crossrefs",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 65,
+      "id": "pdf_layout_bom",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 66,
+      "id": "doc_units",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 67,
+      "id": "doc_traceability",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 68,
+      "id": "doc_change_order",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 69,
+      "id": "doc_technical_offer",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 70,
+      "id": "doc_package",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 71,
+      "id": "plc_debounce",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 72,
+      "id": "plc_sequence",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 73,
+      "id": "plc_pid_antiwindup",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 74,
+      "id": "plc_restart",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 75,
+      "id": "plc_alarm_log",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 76,
+      "id": "modbus_tcp",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 77,
+      "id": "modbus_poll",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 78,
+      "id": "opc_quality",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 79,
+      "id": "mqtt_idempotency",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 80,
+      "id": "io_mapping",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 81,
+      "id": "cad_relay",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 82,
+      "id": "cad_relay_pins",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 83,
+      "id": "cad_din_layout",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 84,
+      "id": "cad_hole_drawing",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 85,
+      "id": "eplan_netlist",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 86,
+      "id": "eplan_terminal_plan",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 87,
+      "id": "eplan_cross_section",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 88,
+      "id": "panel_cable_routes",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 89,
+      "id": "cad_clearance",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 90,
+      "id": "eplan_article_xml",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 91,
+      "id": "devops_oom_timeline",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 92,
+      "id": "devops_systemd",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 93,
+      "id": "devops_container_acl",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 94,
+      "id": "devops_backup_restore",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 95,
+      "id": "gpu_context_budget",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 96,
+      "id": "gpu_benchmark_compare",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 97,
+      "id": "agent_tool_retry",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 98,
+      "id": "agent_rag_conflict",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 99,
+      "id": "agent_sandbox",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    },
+    {
+      "number": 100,
+      "id": "agent_end_to_end",
+      "status": "not_run",
+      "answer": null,
+      "calculation_steps": [],
+      "sources": [],
+      "assumptions": [],
+      "checks": [],
+      "artifacts": [],
+      "wall_seconds": null,
+      "issue": {
+        "category": "not_run",
+        "code": "not_started",
+        "description": "",
+        "attempts": []
+      }
+    }
+  ]
+}
