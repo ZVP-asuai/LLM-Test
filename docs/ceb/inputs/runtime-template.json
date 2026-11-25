@@ -3,10 +3,6 @@
     "verified": false,
     "evidence": null
   },
-  "function_calling": {
-    "verified": false,
-    "evidence": null
-  },
   "native_context32": {
     "verified": false,
     "evidence": null,
@@ -64,6 +60,10 @@
     "evidence": null
   },
   "csharp_compiler": {
+    "verified": false,
+    "evidence": null
+  },
+  "local_tool_execution": {
     "verified": false,
     "evidence": null
   }

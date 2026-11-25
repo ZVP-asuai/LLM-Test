@@ -1,5 +1,5 @@
 {
-  "revision": "delivery-2026-11-25-r3",
+  "revision": "delivery-2026-11-25-r4",
   "note": "Canonical schema for new submissions. Assess historical alternative structures semantically, not by exact strings.",
   "common": {
     "evidence": "string[] at task level",
@@ -56,6 +56,14 @@
     },
     "context256": {
       "note": "archive_key final archive control identifier"
+    },
+    "tools": {
+      "transport": "CLI/RPC/native accepted if actual invocation; native protocol tracked separately",
+      "fields": "doc_id,coil_v,current_a,fuse_max_a,total_coil_a",
+      "evidence": "actual tool trace required for independent scoring"
+    },
+    "eplan_api": {
+      "note": "Fallback standalone serialization and real mock tests allowed by original task. Distinguish from EPLAN integration."
     }
   }
 }

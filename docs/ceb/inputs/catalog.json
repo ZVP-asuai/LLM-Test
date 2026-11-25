@@ -115,9 +115,12 @@
       "kind": "external_source",
       "path": "sources/atv_quick.pdf",
       "url": "https://download.se.com/files?p_Doc_Ref=NVE21763&p_File_Name=ATV320_Getting_Started_EN_NVE21763_04.pdf&p_enDocType=Instruction+sheet",
-      "mirrors": [],
+      "mirrors": [
+        "https://fin-sonfin.mo.cloudinary.net/PRODUCT/DOCUMENT/PictureServer/default.aspx/installationinstruction_3888976.pdf?80758475826A60698475B0AEC0AAA495BCB1B5B9BBA69E9DBEB8C8B7C79AA49DBFB3B3788A6F686D877B82B5B69D=&ts=1771799000315"
+      ],
       "landing": "https://www.se.com/us/en/download/document/NVE21763/",
-      "source_locked": false
+      "source_locked": false,
+      "note": "Verified retrieval 2026-11-25, exact NVE21763 01/2020, 4 pages."
     },
     "contactor.pdf": {
       "kind": "external_source",
@@ -303,8 +306,8 @@
   },
   "clarifications": {
     "devops": "Если lab.service не скачивается, используйте дословный текст файла, встроенный в задание.",
-    "cad_connections": "Без STEP допускается partial: электрическую часть решайте по доступной документации, геометрические координаты без модели не выдумывайте.",
-    "tools": "Разрешён учебный локальный tool-service.py из ZIP; фактический вызов отличайте от анализа текста каталога. Без выполнения инструмента — partial, не заявляйте о вызове.",
+    "cad_connections": "По исходному заданию точная редакция ГОСТ/IEC не обязательна для создания координат и электрических пар: если её нет, честно ограничьте нормативное заключение, не выдумывайте пункты. Обязательны собственный STEP, паспорт, проверка координат и контактов.",
+    "tools": "№12: допускаются реальные вызовы локального сервиса через CLI, RPC или нативный tool calling с журналом; конкретный API транспорта не является критерием. Самостоятельное чтение каталога без вызовов — partial. Нативный function calling измерять отдельно.",
     "ups": "nominal_wh — требуемая номинальная энергия батареи с учётом КПД, глубины разряда и запаса; required_ah вычисляйте из неё.",
     "io_capacity": "spare — установленные каналы минус фактически занятые исходные каналы; required уже включает резерв.",
     "alarm_matrix": "Сохраняйте каждое защёлкнутое действие до разрешённого RESET. LOSS_AIR действует непосредственно, RESET его не отменяет.",
@@ -318,7 +321,7 @@
     "eplan_api": "Без реального SDK отделяйте исходник/проектное решение от фактически проверенного исполнения: partial."
   },
   "clarification_policy": "Определения полей и правила частичного исполнения; исходные числовые данные и критерии не меняются.",
-  "delivery_revision": "delivery-2026-11-25-r3",
+  "delivery_revision": "delivery-2026-11-25-r4",
   "delivery_contract": "https://raw.githubusercontent.com/ZVP-asuai/LLM-Test/main/docs/ceb/inputs/delivery-contract.json",
   "package_urls": [
     "https://zvp-asuai.github.io/LLM-Test/ceb/inputs/CEB-offline-inputs.zip",

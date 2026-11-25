@@ -1,5 +1,5 @@
 {
-  "revision": "delivery-2026-11-25-r3",
+  "revision": "delivery-2026-11-25-r4",
   "suite_version": "2.0-review",
   "manifest_blob_sha": "f074e90e50a6aa4d5deb54de49fa8a333adf099f",
   "source_documents": {
@@ -249,11 +249,7 @@
       "documents": [
         "contactor_datasheet.pdf"
       ],
-      "private_documents": [
-        "gost-contactor.pdf",
-        "iec-contactor.pdf",
-        "iec-auxiliary.pdf"
-      ],
+      "private_documents": [],
       "depends_on": [
         "cad"
       ],
@@ -263,6 +259,11 @@
       "artifacts": [
         "connection-points.csv",
         "terminal-functions.csv"
+      ],
+      "optional_documents": [
+        "gost-contactor.pdf",
+        "iec-contactor.pdf",
+        "iec-auxiliary.pdf"
       ]
     },
     "tools": {
@@ -275,7 +276,7 @@
       "private_documents": [],
       "depends_on": [],
       "runtime": [
-        "function_calling"
+        "local_tool_execution"
       ],
       "artifacts": []
     },
@@ -706,7 +707,11 @@
       ],
       "artifacts": [
         "*.cs"
-      ]
+      ],
+      "fallback_runtime": [
+        "csharp_compiler"
+      ],
+      "note": "Original task explicitly permits standalone serialization and mock tests when EPLAN API unavailable. Distinguish fallback executed and actual EPLAN integration; do not require proprietary API for standalone tests."
     },
     "protocols": {
       "number": 50,
@@ -725,5 +730,5 @@
     "context256": 262144
   },
   "status": "review",
-  "policy": "Owner prepares, verifies and locks inputs before starting any model. Missing environment is not a scored model failure. Source edition and original PDF page must be verified by owner."
+  "policy": "Owner prepares, verifies and locks inputs before starting any model. Missing environment is not a scored model failure. Source edition and original PDF page must be verified by owner. Exact normative editions for CAD11 are optional according to original prompt. Native tool protocol is separate from actual local tool execution."
 }

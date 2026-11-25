@@ -3,8 +3,8 @@ from pathlib import Path
 import hashlib,json,zipfile
 root=Path(__file__).resolve().parents[1];inp=root/'docs/ceb/inputs';out=inp/'CEB-offline-inputs.zip'
 files={f.relative_to(inp).as_posix():f.read_bytes() for f in (inp/'fixtures').rglob('*') if f.is_file()}
-for n in ['context32-preview.txt','context128-preview.txt','context256-preview.txt','tool-service.py','catalog.json','delivery-contract.json','source-approval-template.json','runtime-template.json','output-contracts.json']:files[n]=(inp/n).read_bytes()
-for n,p in {'tasks.json':'docs/ceb/tasks.json','START.txt':'docs/ceb/v2/offline-start.txt','README.md':'docs/ceb/inputs/PREPARE.md','ceb-prepare.py':'scripts/ceb-prepare.py','ceb-run.py':'scripts/ceb-run.py','WORKER.md':'docs/ceb/inputs/WORKER.md','chat-template.json':'docs/ceb/v2/chat-template.json','submission-template.json':'docs/ceb/v2/submission-template.json'}.items():files[n]=(root/p).read_bytes()
+for n in ['context32-preview.txt','context128-preview.txt','context256-preview.txt','tool-service.py','catalog.json','delivery-contract.json','source-approval-template.json','runtime-template.json','output-contracts.json','source-acquisition-lock.json']:files[n]=(inp/n).read_bytes()
+for n,p in {'tasks.json':'docs/ceb/tasks.json','START.txt':'docs/ceb/v2/offline-start.txt','README.md':'docs/ceb/inputs/PREPARE.md','ceb-prepare.py':'scripts/ceb-prepare.py','ceb-run.py':'scripts/ceb-run.py','ceb-make-chat-pack.py':'scripts/ceb-make-chat-pack.py','WORKER.md':'docs/ceb/inputs/WORKER.md','chat-template.json':'docs/ceb/v2/chat-template.json','submission-template.json':'docs/ceb/v2/submission-template.json'}.items():files[n]=(root/p).read_bytes()
 inventory=[{'path':n,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()} for n,b in sorted(files.items())];files['portable-inventory.json']=(json.dumps(inventory,ensure_ascii=False,indent=2)+'\n').encode()
 with zipfile.ZipFile(out,'w') as z:
     for n,b in sorted(files.items()):

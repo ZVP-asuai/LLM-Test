@@ -74,12 +74,13 @@ def main():
                 if not (root/name).is_file():issues.append('missing input: '+name)
                 else:inputs.append('bundle/'+name)
             if n in ['spread.pdf','eplan.pdf','pid.pdf']:inputs+=['bundle/'+str(im.relative_to(root)) for im in sorted((root/'fixtures').glob(n[:-4]+'-page-*.png'))]
-        for n in q['documents']+q['private_documents']:
+        for n in q['documents']+q['private_documents']+q.get('optional_documents',[]):
             r=records[n]
-            if n not in paths:issues.append('missing/unreadable document: '+n)
+            if n not in paths:
+                if n not in q.get('optional_documents',[]):issues.append('missing/unreadable document: '+n)
             else:
                 inputs+=paths[n];maps[n]={k:r[k] for k in ['original_sha256','edition','pages','slice_sha256']}
-                if not r['approved']:issues.append('unapproved source: '+n)
+                if not r['approved'] and n not in q.get('optional_documents',[]):issues.append('unapproved source: '+n)
         for cap in q['runtime']:
             v=rt.get(cap,{})
             if not(isinstance(v,dict) and v.get('verified') is True and v.get('evidence')):issues.append('runtime not verified: '+cap)

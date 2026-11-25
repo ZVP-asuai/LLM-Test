@@ -1,0 +1,39 @@
+{
+  "revision": "delivery-2026-11-25-r4",
+  "scope": "Acquisition fingerprint and document identity verified by opening local PDF, checking title/revision/page count and requested page text. Full independent visual source approval not yet recorded. No answers.",
+  "files": {
+    "abb_af.pdf": {
+      "edition": "1SBC101439D0201",
+      "sha256": "ee12cf0e5e8bfd37221ab6a4299cc184b8b624419b389051ac47b5477081d9b2",
+      "url": "https://library.e.abb.com/public/e166a94cb6c148f6bf180fc14261407e/1SBC101439D0201.pdf",
+      "page_count": 11
+    },
+    "dyneo.pdf": {
+      "edition": "5729 en 2020.03/a",
+      "sha256": "6d42fefca75e31ed044c2034a3580b6ce09ad34e257af6bad533f1c243db62c4",
+      "url": "https://www.leroy-somer.com/documentation_pdf/5729_en.pdf",
+      "page_count": 76
+    },
+    "atv_quick.pdf": {
+      "edition": "NVE21763_04 (01/2020)",
+      "sha256": "7dd772a45743f37842dafc1aad952f8afa56726451e7ad7f162b68bbd1300b63",
+      "url": "https://fin-sonfin.mo.cloudinary.net/PRODUCT/DOCUMENT/PictureServer/default.aspx/installationinstruction_3888976.pdf?80758475826A60698475B0AEC0AAA495BCB1B5B9BBA69E9DBEB8C8B7C79AA49DBFB3B3788A6F686D877B82B5B69D=&ts=1771799000315",
+      "page_count": 4
+    },
+    "contactor.pdf": {
+      "edition": "LC1D09B7 sales drawing",
+      "sha256": "7897d6ecaaf67e37b833505973e6295f8196aa6d5ce446cbea4ea4e4e94b54ec",
+      "url": "https://images.tuotetieto.fi/1739426_DocDimension_Drawing_A1886176.pdf",
+      "page_count": 1
+    },
+    "contactor_datasheet.pdf": {
+      "edition": "LC1D09B7 datasheet 16.09.2024",
+      "sha256": "fb23e3c45a62573795bd951458d74e539c92fcfae91d2641b4135ebe672f81e0",
+      "url": "https://inalelectric.com/wp-content/uploads/2024/09/LC1D09B7.pdf",
+      "page_count": 9
+    }
+  },
+  "unresolved": [
+    "atv_manual.pdf"
+  ]
+}
