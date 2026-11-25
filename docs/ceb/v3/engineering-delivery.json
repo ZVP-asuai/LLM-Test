@@ -1,0 +1,27 @@
+{
+  "dataset_id": "ceb-100-portable-20261125-r2",
+  "expected_sha256": "d7e1172e8f0893d8f9896d48f8501b4d38d8adf0422d6b9df5dde60828540eca",
+  "archive": "engineering-inputs.zip",
+  "sources": [
+    {
+      "kind": "pages",
+      "url": "https://zvp-asuai.github.io/LLM-Test/ceb/v3/engineering-inputs.zip"
+    },
+    {
+      "kind": "github_raw",
+      "url": "https://raw.githubusercontent.com/ZVP-asuai/LLM-Test/ceb-inputs/engineering/d7e1172e8f0893d8f9896d48f8501b4d38d8adf0422d6b9df5dde60828540eca/engineering-inputs.zip"
+    },
+    {
+      "kind": "github_repository",
+      "url": "https://github.com/ZVP-asuai/LLM-Test/blob/ceb-inputs/engineering/d7e1172e8f0893d8f9896d48f8501b4d38d8adf0422d6b9df5dde60828540eca/engineering-inputs.zip"
+    }
+  ],
+  "unpacked": {
+    "repository": "ZVP-asuai/LLM-Test",
+    "branch": "ceb-inputs",
+    "path": "engineering/d7e1172e8f0893d8f9896d48f8501b4d38d8adf0422d6b9df5dde60828540eca/files/",
+    "raw_base": "https://raw.githubusercontent.com/ZVP-asuai/LLM-Test/ceb-inputs/engineering/d7e1172e8f0893d8f9896d48f8501b4d38d8adf0422d6b9df5dde60828540eca/files/"
+  },
+  "google_drive": null,
+  "yandex_disk": null
+}

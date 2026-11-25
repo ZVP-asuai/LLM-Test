@@ -38,3 +38,12 @@ assert assessment["dataset_id"]==current["dataset_id"] and [(t["number"],t["id"]
 assert all(t["brief"] and t["acceptance"] for t in current["tasks"])
 assert 'id="assessment-import"' in html and 'id="historic-issues"' in html
 print("100 natural-language brief questions and independent assessment template validated.")
+
+delivery=json.loads((p/"v3/engineering-delivery.json").read_text())
+start=(p/"v3/engineering-start.txt").read_text()
+assert delivery["expected_sha256"]==hashlib.sha256(pack.read_bytes()).hexdigest()
+assert all(s["url"] in start for s in delivery["sources"])
+assert sum(not t["input_files"] for t in current["tasks"])==63
+assert all(f'ЗАДАНИЕ {t["number"]:02} — {t["id"]}' in start for t in current["tasks"] if not t["input_files"])
+assert 'engineering-start.txt' in html and 'raw-mirror' in html
+print("CEB resilience: fixed ZIP, independent delivery paths, all 63 self-contained fallback tasks validated.")

@@ -36,6 +36,8 @@ jobs:
           python -c "import zipfile,pathlib; z=zipfile.ZipFile('docs/ceb/v3/CEB-3.0-inputs.zip'); assert all(z.read(n)==pathlib.Path('docs/ceb/v3',n).read_bytes() for n in ['manifest.json','extension-tasks.json','run-template.json'])"
       - name: Build unified engineering input package
         run: python scripts/ceb-build-engineering.py
+      - name: Build resilient launch prompt (fixed archive and embedded tasks)
+        run: python scripts/ceb-build-start.py
       - name: Verify active CEB navigation and prompt
         run: python scripts/ceb-check-active.py
       - name: Verify preflight negative case
@@ -58,7 +60,13 @@ jobs:
           fi
           cp docs/ceb/inputs/CEB-offline-inputs.zip docs/ceb/inputs/portable-sha256.txt docs/ceb/v3/CEB-3.0-inputs.zip /tmp/ceb-raw/
           cp docs/ceb/v3/sha256.txt /tmp/ceb-raw/CEB-3.0-sha256.txt
-          git -C /tmp/ceb-raw add CEB-offline-inputs.zip portable-sha256.txt CEB-3.0-inputs.zip CEB-3.0-sha256.txt
+          SHA=$(cut -d' ' -f1 docs/ceb/v3/engineering-sha256.txt)
+          TARGET="/tmp/ceb-raw/engineering/$SHA"
+          mkdir -p "$TARGET/files"
+          cp docs/ceb/v3/engineering-inputs.zip docs/ceb/v3/engineering-sha256.txt "$TARGET/"
+          python -c 'import zipfile,sys; zipfile.ZipFile("docs/ceb/v3/engineering-inputs.zip").extractall(sys.argv[1])' "$TARGET/files"
+          git -C /tmp/ceb-raw add CEB-offline-inputs.zip portable-sha256.txt CEB-3.0-inputs.zip CEB-3.0-sha256.txt "engineering/$SHA"
+
           if ! git -C /tmp/ceb-raw diff --cached --quiet; then
             git -C /tmp/ceb-raw commit -m 'Publish public CEB offline input pack'
             git -C /tmp/ceb-raw push origin HEAD:refs/heads/ceb-inputs
@@ -66,6 +74,11 @@ jobs:
       - uses: actions/upload-artifact@v7
         with:
           path: docs/ceb/v3/CEB-3.0-inputs.zip
+          archive: false
+          retention-days: 30
+      - uses: actions/upload-artifact@v7
+        with:
+          path: docs/ceb/v3/engineering-inputs.zip
           archive: false
           retention-days: 30
       - uses: actions/configure-pages@v5
